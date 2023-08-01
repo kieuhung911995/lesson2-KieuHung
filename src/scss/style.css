@@ -669,6 +669,9 @@ textarea {
   text-transform: uppercase;
   cursor: pointer;
 }
+.button:hover {
+  background-color: #34c635;
+}
 
 .button--blue {
   color: #fff;

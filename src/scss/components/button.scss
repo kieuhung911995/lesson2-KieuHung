@@ -13,6 +13,9 @@
   letter-spacing: -0.3px;
   text-transform: uppercase;
   cursor: pointer;
+  &:hover {
+    background-color: $colorGreen;
+  }
 }
 .button--blue {
   color: #fff;
