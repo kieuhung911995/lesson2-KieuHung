@@ -1,0 +1,57 @@
+.input {
+  position: relative;
+  display: flex;
+  gap: 5px;
+}
+.input__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  color: $colorGrayText;
+  font-family: DM Sans;
+  font-size: 16px;
+  line-height: 162.5%;
+  padding: 0px 18px;
+  border-radius: 5px;
+  border: 1px solid $colorGrayLine;
+  background-color: #fff;
+  &:focus {
+    outline: none;
+  }
+}
+.input__box--fix {
+  width: 210px;
+}
+.input__box--textarea {
+  height: 170px;
+}
+.input__box--number {
+  width: 98px;
+  &[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+.input__search {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  cursor: pointer;
+}
+.spinner-button {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ffffff00;
+}
+
+.inc-button {
+  top: 5px;
+  left: 70px;
+}
+
+.dec-button {
+  bottom: 5px;
+  left: 70px;
+}

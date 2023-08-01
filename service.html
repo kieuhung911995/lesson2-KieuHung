@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page</title>
+    <link rel="stylesheet" href="./src/scss/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="container">
+          <div class="header__top">
+            <a href="#" class="logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="44"
+                viewBox="0 0 32 44"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_312_1142)">
+                  <path
+                    d="M32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0C11.7565 0 7.68687 1.68571 4.68629 4.68629C1.68571 7.68687 0 11.7565 0 16C0 16.2133 3.91006e-07 16.4267 0.0170671 16.64V16H16.0171V32C20.2576 31.9955 24.3229 30.3078 27.3197 27.3077C30.3166 24.3076 32 20.2405 32 16Z"
+                    fill="#61DCDF"
+                  />
+                  <path
+                    d="M0 17V44H16V32.3071H15.9872C11.8545 32.3071 7.88218 30.7135 4.90207 27.8602C1.92197 25.0069 0.165306 21.1151 0 17Z"
+                    fill="#886CFF"
+                  />
+                  <path
+                    d="M0 16V16.64C0.165262 20.7693 1.92146 24.6746 4.90077 27.5378C7.88007 30.401 11.8514 32 15.9829 32H16V16H0Z"
+                    fill="#F9E492"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_312_1142">
+                    <rect width="32" height="44" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h2 class="logo__text">Pollock</h2>
+            </a>
+            <ul class="header__menu">
+              <li class="header__nav" onclick="pageNavigate(this)">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="header__nav active" onclick="pageNavigate(this)">
+                <a href="service.html">Services</a>
+              </li>
+              <li class="header__nav" onclick="pageNavigate(this)">
+                <a href="about.html">About</a>
+              </li>
+              <li class="header__nav" onclick="pageNavigate(this)">
+                <a href="page.html">Pages</a>
+              </li>
+              <li class="header__nav" onclick="pageNavigate(this)">
+                <a href="blog.html">Blog</a>
+              </li>
+              <li class="header__nav" onclick="pageNavigate(this)">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="header__feature">
+              <div class="header__search">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Search">
+                    <circle
+                      id="Ellipse"
+                      cx="9"
+                      cy="9"
+                      r="8"
+                      stroke="#7B88A8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      id="Line"
+                      d="M14.5 14.958L19.5 19.958"
+                      stroke="#7B88A8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="header__cart active">
+                <svg
+                  width="20"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Bag 2">
+                    <path
+                      id="Rectangle 2"
+                      d="M2.53715 9.47134C2.80212 7.48412 4.49726 6 6.50207 6H13.4979C15.5027 6 17.1979 7.48412 17.4628 9.47135L18.3962 16.4713C18.7159 18.8693 16.8504 21 14.4313 21H5.56873C3.14958 21 1.2841 18.8693 1.60382 16.4713L2.53715 9.47134Z"
+                      stroke="#7B88A8"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      id="Rectangle 4"
+                      d="M14 8V5C14 2.79086 12.2091 1 10 1V1C7.79086 1 6 2.79086 6 5L6 8"
+                      stroke="#7B88A8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="button button--blue">Sign Up</div>
+          </div>
+          <div class="header__name-page">
+            <h1 class="header__tilte-top">Our Work</h1>
+            <div class="header__title-bottom">
+              <span>homepage</span><span>/</span><span>projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <section>
+        <div class="finest">
+          <h1 class="finest__title">Get inspired by our finest work</h1>
+          <div class="row">
+            <div
+              class="col"
+              style="--col-xl: 4; --col-lg: 4; --col-md: 6; --col-sm: 12"
+            >
+              <div class="finest__couple-img">
+                <div class="finest__img">
+                  <img src="./assets/images/finest1.jpg" alt="finest-img" />
+                </div>
+                <div class="finest__img">
+                  <img src="./assets/images/finest4.jpg" alt="finest-img" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+              style="--col-xl: 4; --col-lg: 4; --col-md: 6; --col-sm: 12"
+            >
+              <div class="finest__couple-img">
+                <div class="finest__img">
+                  <img src="./assets/images/finest2.jpg" alt="finest-img" />
+                </div>
+                <div class="finest__img">
+                  <img src="./assets/images/finest5.jpg" alt="finest-img" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+              style="--col-xl: 4; --col-lg: 4; --col-md: 6; --col-sm: 12"
+            >
+              <div class="finest__couple-img">
+                <div class="finest__img">
+                  <img src="./assets/images/finest3.jpg" alt="finest-img" />
+                </div>
+                <div class="finest__img">
+                  <img src="./assets/images/finest6.jpg" alt="finest-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button button--gray">Load More</div>
+        </div>
+      </section>
+      <section>
+        <div class="client">
+          <div class="container">
+            <h2 class="client__title">What our clients are saying about us</h2>
+            <div class="client__note">
+              Customer satisfaction is a primary goal for our company
+            </div>
+            <div class="client__carousel">
+              <div class="row">
+                <div
+                  class="col"
+                  style="--col-xl: 4; --col-lg: 4; --col-md: 12; --col-sm: 12"
+                >
+                  <div class="client__detail">
+                    <div class="client__avatar">
+                      <img src="./assets/images/client1.jpg" alt="avatar" />
+                    </div>
+                    <div class="client__name">Monica Smith</div>
+                    <div class="client__position">Brand & Co</div>
+                    <div class="client__rate">Amazing!!</div>
+                    <div class="client__comment">
+                      Overall experience is awesome!! I'm a visual thinker, and
+                      I couldn't function without a tool like this.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col"
+                  style="--col-xl: 4; --col-lg: 4; --col-md: 12; --col-sm: 12"
+                >
+                  <div class="client__detail">
+                    <div class="client__avatar">
+                      <img src="./assets/images/client2.jpg" alt="avatar" />
+                    </div>
+                    <div class="client__name">Vincent Smith</div>
+                    <div class="client__position">Brand & Co</div>
+                    <div class="client__rate">Amazing!!</div>
+                    <div class="client__comment">
+                      Overall experience is awesome!! I'm a visual thinker, and
+                      I couldn't function without a tool like this.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col"
+                  style="--col-xl: 4; --col-lg: 4; --col-md: 12; --col-sm: 12"
+                >
+                  <div class="client__detail">
+                    <div class="client__avatar">
+                      <img src="./assets/images/client3.jpg" alt="avatar" />
+                    </div>
+                    <div class="client__name">Stella Smith</div>
+                    <div class="client__position">Brand & Co</div>
+                    <div class="client__rate">Amazing!!</div>
+                    <div class="client__comment">
+                      Overall experience is awesome!! I'm a visual thinker, and
+                      I couldn't function without a tool like this.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="client__scroll">
+                <svg
+                  width="200"
+                  height="200"
+                  viewBox="0 0 200 200"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_d_340_1578)">
+                    <circle cx="100" cy="80" r="50" fill="#292F3A" />
+                  </g>
+                  <path d="M108 87V73L118 80L108 87Z" fill="white" />
+                  <path d="M92 73L92 87L82 80L92 73Z" fill="white" />
+                  <defs>
+                    <filter
+                      id="filter0_d_340_1578"
+                      x="0"
+                      y="0"
+                      width="200"
+                      height="200"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dy="20" />
+                      <feGaussianBlur stdDeviation="25" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.309804 0 0 0 0 0.466667 0 0 0 0 1 0 0 0 0.2 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_340_1578"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_340_1578"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="project">
+            <h2 class="project__title">Recent projects</h2>
+            <div class="project__carousel">
+              <div class="row">
+                <div
+                  class="col"
+                  style="--col-xl: 4; --col-lg: 4; --col-md: 12; --col-sm: 12"
+                >
+                  <div class="project__detail">
+                    <div class="project__img">
+                      <img
+                        src="./assets/images/project1.jpg"
+                        alt="project-img"
+                      />
+                    </div>
+                    <div class="project__carousel-text">
+                      <h3 class="project__carousel-title">Collaboration App</h3>
+                      <div class="project__carousel-note">
+                        UI Deisgn / Development
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col"
+                  style="--col-xl: 4; --col-lg: 4; --col-md: 12; --col-sm: 12"
+                >
+                  <div class="project__detail">
+                    <div class="project__img">
+                      <img
+                        src="./assets/images/project2.jpg"
+                        alt="project-img"
+                      />
+                    </div>
+                    <div class="project__carousel-text">
+                      <h3 class="project__carousel-title">Learning Mobile</h3>
+                      <div class="project__carousel-note">
+                        UI Deisgn / Development
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col"
+                  style="--col-xl: 4; --col-lg: 4; --col-md: 12; --col-sm: 12"
+                >
+                  <div class="project__detail">
+                    <div class="project__img">
+                      <img
+                        src="./assets/images/project3.jpg"
+                        alt="project-img"
+                      />
+                    </div>
+                    <div class="project__carousel-text">
+                      <h3 class="project__carousel-title">Abstract Waves</h3>
+                      <div class="project__carousel-note">
+                        UI Deisgn / Development
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project__scroll">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="124"
+                  height="40"
+                  viewBox="0 0 124 40"
+                  fill="none"
+                >
+                  <rect x="68" width="56" height="40" rx="20" fill="#4F77FF" />
+                  <path
+                    d="M85.8593 20.8594L104.059 20.8594L101.044 23.8596C100.708 24.1944 100.707 24.7386 101.041 25.075C101.376 25.4114 101.92 25.4126 102.257 25.0779L106.747 20.6091C106.747 20.6089 106.748 20.6086 106.748 20.6083C107.083 20.2735 107.085 19.7276 106.748 19.3917C106.748 19.3914 106.747 19.3911 106.747 19.3909L102.257 14.9221C101.92 14.5874 101.376 14.5886 101.041 14.9251C100.707 15.2615 100.708 15.8056 101.044 16.1404L104.059 19.1406L85.8593 19.1406C85.3847 19.1406 85 19.5254 85 20C85 20.4746 85.3847 20.8594 85.8593 20.8594Z"
+                    fill="white"
+                  />
+                  <rect
+                    x="55.5"
+                    y="39.5"
+                    width="55"
+                    height="39"
+                    rx="19.5"
+                    transform="rotate(-180 55.5 39.5)"
+                    stroke="#E7E5EA"
+                  />
+                  <path
+                    d="M38.1407 19.1406L19.9409 19.1406L22.9557 16.1404C23.2921 15.8056 23.2934 15.2614 22.9586 14.925C22.6238 14.5886 22.0797 14.5874 21.7433 14.9221L17.2528 19.3909C17.2525 19.3911 17.2523 19.3914 17.2521 19.3917C16.9165 19.7265 16.9155 20.2724 17.252 20.6083C17.2523 20.6086 17.2525 20.6089 17.2528 20.6091L21.7432 25.0779C22.0795 25.4126 22.6237 25.4114 22.9585 25.0749C23.2934 24.7385 23.2921 24.1944 22.9557 23.8596L19.9409 20.8594L38.1407 20.8594C38.6153 20.8594 39 20.4746 39 20C39 19.5254 38.6153 19.1406 38.1407 19.1406Z"
+                    fill="#2D3958"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="tip-box">
+          <div class="container">
+            <div class="tip-box__title">
+              <h2>
+                We will keep you up to date and give you tips to help you
+                optimise your company
+              </h2>
+            </div>
+            <div class="row">
+              <div
+                class="col"
+                style="--col-xl: 4; --col-lg: 4; --col-md: 12; --col-sm: 12"
+              >
+                <a href="#" class="tip">
+                  <div class="tip__img">
+                    <img src="./assets/images/tip1.jpg" />
+                  </div>
+                  <div class="tip__detail">
+                    <h3 class="tip__title">
+                      10 secrets to connect with your audience through your
+                      website and blog
+                    </h3>
+                    <div class="tip__content">
+                      It is not the same to write a blog with simple information
+                      as to write by connecting with your target.
+                    </div>
+                    <div class="tip__description">
+                      <div class="tip__description-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="17"
+                          viewBox="0 0 16 17"
+                          fill="none"
+                        >
+                          <rect
+                            x="1.25"
+                            y="2.625"
+                            width="13.5"
+                            height="13.5"
+                            rx="3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                          />
+                          <path
+                            d="M1.25 6.375H14.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 1.5L11.375 3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M4.625 1.5L4.625 3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.875 9.375H4.625"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.625 9.375H8.375"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 9.375H12.125"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.875 12.375H4.625"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.625 12.375H8.375"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 12.375H12.125"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div class="tip__description-text">May 7, 2022</div>
+                      </div>
+                      <div class="tip__description-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                        >
+                          <circle
+                            cx="9"
+                            cy="9"
+                            r="7.5"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                          />
+                          <path
+                            d="M9 6V8.73241C9 8.89958 9.08355 9.0557 9.22265 9.14843L11.25 10.5"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                        <div class="tip__description-text">10 min read</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="col"
+                style="--col-xl: 4; --col-lg: 4; --col-md: 12; --col-sm: 12"
+              >
+                <a href="#" class="tip">
+                  <div class="tip__img">
+                    <img src="./assets/images/tip2.jpg" />
+                  </div>
+                  <div class="tip__detail">
+                    <h3 class="tip__title">
+                      Which WordPress should you choose: WordPress.com vs
+                      WordPress.org?
+                    </h3>
+                    <div class="tip__content">
+                      Do you know what the difference is between WordPress.com
+                      and WordPress.org? Since they are not the same.
+                    </div>
+                    <div class="tip__description">
+                      <div class="tip__description-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="17"
+                          viewBox="0 0 16 17"
+                          fill="none"
+                        >
+                          <rect
+                            x="1.25"
+                            y="2.625"
+                            width="13.5"
+                            height="13.5"
+                            rx="3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                          />
+                          <path
+                            d="M1.25 6.375H14.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 1.5L11.375 3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M4.625 1.5L4.625 3.75"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.875 9.375H4.625"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.625 9.375H8.375"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 9.375H12.125"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.875 12.375H4.625"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.625 12.375H8.375"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.375 12.375H12.125"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div class="tip__description-text">May 7, 2022</div>
+                      </div>
+                      <div class="tip__description-item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                        >
+                          <circle
+                            cx="9"
+                            cy="9"
+                            r="7.5"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                          />
+                          <path
+                            d="M9 6V8.73241C9 8.89958 9.08355 9.0557 9.22265 9.14843L11.25 10.5"
+                            stroke="#4F77FF"
+                            stroke-width="1.125"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                        <div class="tip__description-text">10 min read</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="col"
+                style="--col-xl: 4; --col-lg: 4; --col-md: 12; --col-sm: 12"
+              >
+                <div class="wrap-box" style="--gap: 15px">
+                  <a href="#" class="tip tip--style2">
+                    <div class="row">
+                      <div
+                        class="col"
+                        style="
+                          --col-xl: 8;
+                          --col-lg: 8;
+                          --col-md: 8;
+                          --col-sm: 8;
+                        "
+                      >
+                        <div class="tip__detail">
+                          <h3 class="tip__title">
+                            These web design trends will help inform and inspire
+                            what people build for the web
+                          </h3>
+                          <div class="tip__description">
+                            <div class="tip__description-item">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="17"
+                                viewBox="0 0 16 17"
+                                fill="none"
+                              >
+                                <rect
+                                  x="1.25"
+                                  y="2.625"
+                                  width="13.5"
+                                  height="13.5"
+                                  rx="3.75"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                />
+                                <path
+                                  d="M1.25 6.375H14.75"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M11.375 1.5L11.375 3.75"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M4.625 1.5L4.625 3.75"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M3.875 9.375H4.625"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M7.625 9.375H8.375"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M11.375 9.375H12.125"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M3.875 12.375H4.625"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M7.625 12.375H8.375"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M11.375 12.375H12.125"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <div class="tip__description-text">
+                                May 7, 2022
+                              </div>
+                            </div>
+                            <div class="tip__description-item">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 18 18"
+                                fill="none"
+                              >
+                                <circle
+                                  cx="9"
+                                  cy="9"
+                                  r="7.5"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                />
+                                <path
+                                  d="M9 6V8.73241C9 8.89958 9.08355 9.0557 9.22265 9.14843L11.25 10.5"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                />
+                              </svg>
+                              <div class="tip__description-text">
+                                10 min read
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="col"
+                        style="
+                          --col-xl: 4;
+                          --col-lg: 4;
+                          --col-md: 4;
+                          --col-sm: 4;
+                        "
+                      >
+                        <div class="tip__img">
+                          <img src="./assets/images/tip3.jpg" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="tip tip--style2">
+                    <div class="row">
+                      <div
+                        class="col"
+                        style="
+                          --col-xl: 8;
+                          --col-lg: 8;
+                          --col-md: 8;
+                          --col-sm: 8;
+                        "
+                      >
+                        <div class="tip__detail">
+                          <h3 class="tip__title">
+                            What are the differences between Google Analytics
+                            and Analytics 360
+                          </h3>
+                          <div class="tip__description">
+                            <div class="tip__description-item">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="17"
+                                viewBox="0 0 16 17"
+                                fill="none"
+                              >
+                                <rect
+                                  x="1.25"
+                                  y="2.625"
+                                  width="13.5"
+                                  height="13.5"
+                                  rx="3.75"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                />
+                                <path
+                                  d="M1.25 6.375H14.75"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M11.375 1.5L11.375 3.75"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M4.625 1.5L4.625 3.75"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M3.875 9.375H4.625"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M7.625 9.375H8.375"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M11.375 9.375H12.125"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M3.875 12.375H4.625"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M7.625 12.375H8.375"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M11.375 12.375H12.125"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <div class="tip__description-text">
+                                May 7, 2022
+                              </div>
+                            </div>
+                            <div class="tip__description-item">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 18 18"
+                                fill="none"
+                              >
+                                <circle
+                                  cx="9"
+                                  cy="9"
+                                  r="7.5"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                />
+                                <path
+                                  d="M9 6V8.73241C9 8.89958 9.08355 9.0557 9.22265 9.14843L11.25 10.5"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                />
+                              </svg>
+                              <div class="tip__description-text">
+                                10 min read
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="col"
+                        style="
+                          --col-xl: 4;
+                          --col-lg: 4;
+                          --col-md: 4;
+                          --col-sm: 4;
+                        "
+                      >
+                        <div class="tip__img">
+                          <img src="./assets/images/tip4.jpg" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="tip tip--style2">
+                    <div class="row">
+                      <div
+                        class="col"
+                        style="
+                          --col-xl: 8;
+                          --col-lg: 8;
+                          --col-md: 8;
+                          --col-sm: 8;
+                        "
+                      >
+                        <div class="tip__detail">
+                          <h3 class="tip__title">
+                            Niche Coworking: 4 shared workspaces for designers
+                            and developers
+                          </h3>
+                          <div class="tip__description">
+                            <div class="tip__description-item">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="17"
+                                viewBox="0 0 16 17"
+                                fill="none"
+                              >
+                                <rect
+                                  x="1.25"
+                                  y="2.625"
+                                  width="13.5"
+                                  height="13.5"
+                                  rx="3.75"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                />
+                                <path
+                                  d="M1.25 6.375H14.75"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M11.375 1.5L11.375 3.75"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M4.625 1.5L4.625 3.75"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M3.875 9.375H4.625"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M7.625 9.375H8.375"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M11.375 9.375H12.125"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M3.875 12.375H4.625"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M7.625 12.375H8.375"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M11.375 12.375H12.125"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <div class="tip__description-text">
+                                May 7, 2022
+                              </div>
+                            </div>
+                            <div class="tip__description-item">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 18 18"
+                                fill="none"
+                              >
+                                <circle
+                                  cx="9"
+                                  cy="9"
+                                  r="7.5"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                />
+                                <path
+                                  d="M9 6V8.73241C9 8.89958 9.08355 9.0557 9.22265 9.14843L11.25 10.5"
+                                  stroke="#4F77FF"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                />
+                              </svg>
+                              <div class="tip__description-text">
+                                10 min read
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="col"
+                        style="
+                          --col-xl: 4;
+                          --col-lg: 4;
+                          --col-md: 4;
+                          --col-sm: 4;
+                        "
+                      >
+                        <div class="tip__img">
+                          <img src="./assets/images/tip5.jpg" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__bottom-wrap">
+              <div class="row">
+                <div
+                  class="col"
+                  style="--col-xl: 2; --col-lg: 2; --col-md: 2; --col-sm: 2"
+                >
+                  <a href="#" class="logo">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="44"
+                      viewBox="0 0 32 44"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_312_1142)">
+                        <path
+                          d="M32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0C11.7565 0 7.68687 1.68571 4.68629 4.68629C1.68571 7.68687 0 11.7565 0 16C0 16.2133 3.91006e-07 16.4267 0.0170671 16.64V16H16.0171V32C20.2576 31.9955 24.3229 30.3078 27.3197 27.3077C30.3166 24.3076 32 20.2405 32 16Z"
+                          fill="#61DCDF"
+                        />
+                        <path
+                          d="M0 17V44H16V32.3071H15.9872C11.8545 32.3071 7.88218 30.7135 4.90207 27.8602C1.92197 25.0069 0.165306 21.1151 0 17Z"
+                          fill="#886CFF"
+                        />
+                        <path
+                          d="M0 16V16.64C0.165262 20.7693 1.92146 24.6746 4.90077 27.5378C7.88007 30.401 11.8514 32 15.9829 32H16V16H0Z"
+                          fill="#F9E492"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_312_1142">
+                          <rect width="32" height="44" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <h2 class="logo__text logo__text--white">Pollock</h2>
+                  </a>
+                </div>
+                <div
+                  class="col"
+                  style="--col-xl: 6; --col-lg: 6; --col-md: 12; --col-sm: 12"
+                >
+                  <div class="footer__menu-wrap">
+                    <div class="footer__menu">
+                      <div class="footer__menu-title">Company</div>
+                      <ul>
+                        <li class="footer__menu-nav"><a href="#">About</a></li>
+                        <li class="footer__menu-nav"><a href="#">Work</a></li>
+                        <li class="footer__menu-nav">
+                          <a href="#">Careers</a>
+                        </li>
+                        <li class="footer__menu-nav">
+                          <a href="#">Pricing</a>
+                        </li>
+                        <li class="footer__menu-nav"><a href="#">Blog</a></li>
+                      </ul>
+                    </div>
+                    <div class="footer__menu">
+                      <div class="footer__menu-title">Services</div>
+                      <ul>
+                        <li class="footer__menu-nav">
+                          <a href="#">Branding</a>
+                        </li>
+                        <li class="footer__menu-nav">
+                          <a href="#">Websites</a>
+                        </li>
+                        <li class="footer__menu-nav">
+                          <a href="#">Development</a>
+                        </li>
+                        <li class="footer__menu-nav">
+                          <a href="#">Strategy</a>
+                        </li>
+                        <li class="footer__menu-nav">
+                          <a href="#">Platforms</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="footer__menu">
+                      <div class="footer__menu-title">Contact</div>
+                      <ul>
+                        <li class="footer__menu-nav">
+                          <a href="#">Help Desk</a>
+                        </li>
+                        <li class="footer__menu-nav"><a href="#">Docs</a></li>
+                        <li class="footer__menu-nav">
+                          <a href="#">Open a Ticket</a>
+                        </li>
+                        <li class="footer__menu-nav"><a href="#">Chat</a></li>
+                        <li class="footer__menu-nav"><a href="#">Forum</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col"
+                  style="--col-xl: 4; --col-lg: 4; --col-md: 12; --col-sm: 12"
+                >
+                  <div class="footer__text-subcribe">
+                    <div class="footer__menu-title">Newsletter</div>
+                    <div class="footer__menu-text">
+                      Subscribe to our newsletter to keep up to date on our
+                      marketing, website, design services, and tips.
+                    </div>
+                    <form class="input" action="">
+                      <input
+                        class="input__box"
+                        type="text"
+                        placeholder="Enter email"
+                      />
+                      <button type="submit" class="button button--blue">
+                        Subscribe
+                      </button>
+                    </form>
+                    <div class="footer__menu-note">
+                      We hate spam as much as you do. We will never, ever send
+                      you such emails.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__policy">
+              <div class="footer__policy-text">
+                © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions.
+                Privacy Policy.
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="196"
+                height="52"
+                viewBox="0 0 196 52"
+                fill="none"
+              >
+                <circle cx="26" cy="26" r="26" fill="#4F77FF" />
+                <path
+                  d="M27.6497 35.893V26.0503H30.6079L31 22.5862H27.6497L27.6547 20.8522C27.6547 19.9487 27.7462 19.4648 29.1297 19.4648H30.9793V16H28.0204C24.4663 16 23.2155 17.6804 23.2155 20.5068V22.5864H21V26.0509H23.2155V35.7535C24.0786 35.9148 24.9709 36 25.8846 36C26.4748 36 27.0644 35.9643 27.6497 35.893Z"
+                  fill="white"
+                />
+                <circle cx="98" cy="26" r="26" fill="#4F77FF" />
+                <path
+                  d="M111 18.3677C110.033 18.7692 109.003 19.0354 107.929 19.1646C109.034 18.54 109.877 17.5585 110.274 16.3754C109.243 16.9569 108.106 17.3677 106.894 17.5969C105.915 16.6108 104.521 16 103 16C100.049 16 97.6734 18.2677 97.6734 21.0477C97.6734 21.4477 97.7091 21.8323 97.7969 22.1985C93.3655 21.9938 89.4444 19.9831 86.8102 16.92C86.3504 17.6754 86.0806 18.54 86.0806 19.4708C86.0806 21.2185 87.0312 22.7677 88.4483 23.6646C87.5919 23.6492 86.7517 23.4138 86.04 23.0431C86.04 23.0585 86.04 23.0785 86.04 23.0985C86.04 25.5508 87.8876 27.5877 90.3105 28.0569C89.8766 28.1692 89.4037 28.2231 88.913 28.2231C88.5717 28.2231 88.2272 28.2046 87.9039 28.1369C88.5945 30.1354 90.5543 31.6046 92.8845 31.6523C91.071 32.9954 88.7684 33.8046 86.2756 33.8046C85.8385 33.8046 85.4192 33.7862 85 33.7354C87.3611 35.1769 90.1594 36 93.177 36C102.986 36 108.348 28.3077 108.348 21.64C108.348 21.4169 108.34 21.2015 108.329 20.9877C109.386 20.2769 110.275 19.3892 111 18.3677Z"
+                  fill="white"
+                />
+                <circle cx="170" cy="26" r="26" fill="#4F77FF" />
+                <path
+                  d="M160 18.3232C160 17.6498 160.236 17.0943 160.709 16.6566C161.182 16.2188 161.797 16 162.554 16C163.297 16 163.899 16.2155 164.358 16.6465C164.831 17.0909 165.068 17.67 165.068 18.3838C165.068 19.0303 164.838 19.569 164.378 20C163.905 20.4444 163.284 20.6667 162.514 20.6667H162.493C161.75 20.6667 161.149 20.4444 160.689 20C160.23 19.5556 160 18.9966 160 18.3232ZM160.264 36V22.5051H164.764V36H160.264ZM167.257 36H171.757V28.4646C171.757 27.9933 171.811 27.6296 171.919 27.3737C172.108 26.9158 172.395 26.5286 172.78 26.2121C173.166 25.8956 173.649 25.7374 174.23 25.7374C175.743 25.7374 176.5 26.7542 176.5 28.7879V36H181V28.2626C181 26.2694 180.527 24.7576 179.581 23.7273C178.635 22.697 177.385 22.1818 175.831 22.1818C174.088 22.1818 172.73 22.9293 171.757 24.4242V24.4646H171.736L171.757 24.4242V22.5051H167.257C167.284 22.936 167.297 24.2761 167.297 26.5253C167.297 28.7744 167.284 31.9326 167.257 36Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

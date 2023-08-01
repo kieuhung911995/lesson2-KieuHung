@@ -1,0 +1,26 @@
+.find-workspace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 130px;
+}
+.find-workspace__title {
+  font-size: 48px;
+  line-height: 116.667%;
+  letter-spacing: -2px;
+  padding-bottom: 30px;
+  span {
+    background: -webkit-linear-gradient(224deg, #61dcdf 0%, #886cff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.find-workspace__note {
+  font-family: Outfit;
+  font-size: 22px;
+  line-height: 145.455%;
+  letter-spacing: -1px;
+  width: 60%;
+  text-align: center;
+  padding-bottom: 90px;
+}

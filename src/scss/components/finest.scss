@@ -1,0 +1,23 @@
+.finest {
+  padding: 90px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+.finest__title {
+  text-align: center;
+  font-size: 64px;
+  line-height: 112.5%;
+  letter-spacing: -2px;
+}
+.finest__couple-img {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.finest__img {
+  img {
+    border-radius: 20px;
+  }
+}

@@ -1,0 +1,16 @@
+.tip-box {
+  padding: 120px 0px;
+  background-color: $colorGrayBox;
+}
+.tip-box__title {
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  h2 {
+    width: 80%;
+    font-size: 48px;
+    line-height: 116.667%;
+    letter-spacing: -2px;
+  }
+}

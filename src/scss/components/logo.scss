@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.logo__text {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 133.333%;
+  letter-spacing: -0.4px;
+}
+.logo__text--white {
+  color: #fff;
+}

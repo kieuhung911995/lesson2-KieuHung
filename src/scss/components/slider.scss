@@ -1,0 +1,25 @@
+.slider__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+}
+.slider__price-text {
+  color: $colorGrayText2;
+  font-family: Outfit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 171.429%;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+}
+.slider__filter-text {
+  color: $colorBlue;
+  text-align: right;
+  font-family: Outfit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 171.429%;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+}

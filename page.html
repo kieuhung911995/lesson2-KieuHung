@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page</title>
+    <link rel="stylesheet" href="./src/scss/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="container">
+          <div class="header__top">
+            <a href="#" class="logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="44"
+                viewBox="0 0 32 44"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_312_1142)">
+                  <path
+                    d="M32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0C11.7565 0 7.68687 1.68571 4.68629 4.68629C1.68571 7.68687 0 11.7565 0 16C0 16.2133 3.91006e-07 16.4267 0.0170671 16.64V16H16.0171V32C20.2576 31.9955 24.3229 30.3078 27.3197 27.3077C30.3166 24.3076 32 20.2405 32 16Z"
+                    fill="#61DCDF"
+                  />
+                  <path
+                    d="M0 17V44H16V32.3071H15.9872C11.8545 32.3071 7.88218 30.7135 4.90207 27.8602C1.92197 25.0069 0.165306 21.1151 0 17Z"
+                    fill="#886CFF"
+                  />
+                  <path
+                    d="M0 16V16.64C0.165262 20.7693 1.92146 24.6746 4.90077 27.5378C7.88007 30.401 11.8514 32 15.9829 32H16V16H0Z"
+                    fill="#F9E492"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_312_1142">
+                    <rect width="32" height="44" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h2 class="logo__text">Pollock</h2>
+            </a>
+            <ul class="header__menu">
+              <li class="header__nav" onclick="pageNavigate(this)">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="header__nav" onclick="pageNavigate(this)">
+                <a href="service.html">Services</a>
+              </li>
+              <li class="header__nav" onclick="pageNavigate(this)">
+                <a href="about.html">About</a>
+              </li>
+              <li class="header__nav active" onclick="pageNavigate(this)">
+                <a href="page.html">Pages</a>
+              </li>
+              <li class="header__nav" onclick="pageNavigate(this)">
+                <a href="blog.html">Blog</a>
+              </li>
+              <li class="header__nav" onclick="pageNavigate(this)">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="header__feature">
+              <div class="header__search">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Search">
+                    <circle
+                      id="Ellipse"
+                      cx="9"
+                      cy="9"
+                      r="8"
+                      stroke="#7B88A8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      id="Line"
+                      d="M14.5 14.958L19.5 19.958"
+                      stroke="#7B88A8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="header__cart active">
+                <svg
+                  width="20"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Bag 2">
+                    <path
+                      id="Rectangle 2"
+                      d="M2.53715 9.47134C2.80212 7.48412 4.49726 6 6.50207 6H13.4979C15.5027 6 17.1979 7.48412 17.4628 9.47135L18.3962 16.4713C18.7159 18.8693 16.8504 21 14.4313 21H5.56873C3.14958 21 1.2841 18.8693 1.60382 16.4713L2.53715 9.47134Z"
+                      stroke="#7B88A8"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      id="Rectangle 4"
+                      d="M14 8V5C14 2.79086 12.2091 1 10 1V1C7.79086 1 6 2.79086 6 5L6 8"
+                      stroke="#7B88A8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="button button--blue">Sign Up</div>
+          </div>
+          <div class="header__name-page">
+            <h1 class="header__tilte-top">Our Shop</h1>
+            <div class="header__title-bottom">
+              <span>homepage</span><span>/</span><span>shop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <section class="page-section">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col"
+              style="--col-xl: 3; --col-lg: 3; --col-md: 12; --col-sm: 12"
+            >
+              <div class="wrap-box" style="--gap: 50px">
+                <div class="filter-box">
+                  <div class="filter-box__title active">
+                    <div class="filter-box__title-text">Category</div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.29289 9.29289C7.65338 8.93241 8.22061 8.90468 8.6129 9.2097L8.70711 9.29289L12 12.585L15.2929 9.29289C15.6534 8.93241 16.2206 8.90468 16.6129 9.2097L16.7071 9.29289C17.0676 9.65338 17.0953 10.2206 16.7903 10.6129L16.7071 10.7071L12.7071 14.7071C12.3466 15.0676 11.7794 15.0953 11.3871 14.7903L11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289Z"
+                          fill="#888682"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="checkbox-dropdown">
+                    <label class="checkbox"
+                      >App
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__checkmark"></span>
+                    </label>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.29289 9.29289C7.65338 8.93241 8.22061 8.90468 8.6129 9.2097L8.70711 9.29289L12 12.585L15.2929 9.29289C15.6534 8.93241 16.2206 8.90468 16.6129 9.2097L16.7071 9.29289C17.0676 9.65338 17.0953 10.2206 16.7903 10.6129L16.7071 10.7071L12.7071 14.7071C12.3466 15.0676 11.7794 15.0953 11.3871 14.7903L11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289Z"
+                          fill="#888682"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="checkbox-dropdown">
+                    <label class="checkbox"
+                      >Audio
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__checkmark"></span>
+                    </label>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.29289 9.29289C7.65338 8.93241 8.22061 8.90468 8.6129 9.2097L8.70711 9.29289L12 12.585L15.2929 9.29289C15.6534 8.93241 16.2206 8.90468 16.6129 9.2097L16.7071 9.29289C17.0676 9.65338 17.0953 10.2206 16.7903 10.6129L16.7071 10.7071L12.7071 14.7071C12.3466 15.0676 11.7794 15.0953 11.3871 14.7903L11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289Z"
+                          fill="#888682"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="checkbox-dropdown active">
+                    <label class="checkbox"
+                      >Electronics
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__checkmark"></span>
+                    </label>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.29289 9.29289C7.65338 8.93241 8.22061 8.90468 8.6129 9.2097L8.70711 9.29289L12 12.585L15.2929 9.29289C15.6534 8.93241 16.2206 8.90468 16.6129 9.2097L16.7071 9.29289C17.0676 9.65338 17.0953 10.2206 16.7903 10.6129L16.7071 10.7071L12.7071 14.7071C12.3466 15.0676 11.7794 15.0953 11.3871 14.7903L11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289Z"
+                          fill="#888682"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <label class="checkbox child"
+                    >Accessories
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__checkmark"></span>
+                  </label>
+                  <label class="checkbox child"
+                    >Camera
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__checkmark"></span>
+                  </label>
+                  <label class="checkbox child"
+                    >Computer
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__checkmark"></span>
+                  </label>
+                  <label class="checkbox child"
+                    >Headphones
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__checkmark"></span>
+                  </label>
+                  <label class="checkbox child"
+                    >Smartphone
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__checkmark"></span>
+                  </label>
+                  <label class="checkbox child"
+                    >TV
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__checkmark"></span>
+                  </label>
+                  <label class="checkbox child"
+                    >Video
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__checkmark"></span>
+                  </label>
+                </div>
+                <div class="filter-box">
+                  <div class="filter-box__title active">
+                    <div class="filter-box__title-text">Brand</div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.29289 9.29289C7.65338 8.93241 8.22061 8.90468 8.6129 9.2097L8.70711 9.29289L12 12.585L15.2929 9.29289C15.6534 8.93241 16.2206 8.90468 16.6129 9.2097L16.7071 9.29289C17.0676 9.65338 17.0953 10.2206 16.7903 10.6129L16.7071 10.7071L12.7071 14.7071C12.3466 15.0676 11.7794 15.0953 11.3871 14.7903L11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289Z"
+                          fill="#888682"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <label class="checkbox"
+                    >Apple
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__checkmark"></span>
+                  </label>
+                  <label class="checkbox"
+                    >Bose
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__checkmark"></span>
+                  </label>
+                  <label class="checkbox"
+                    >Dell
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__checkmark"></span>
+                  </label>
+                  <label class="checkbox"
+                    >LG
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__checkmark"></span>
+                  </label>
+                  <label class="checkbox"
+                    >Samsung
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__checkmark"></span>
+                  </label>
+                  <label class="checkbox"
+                    >Sony
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__checkmark"></span>
+                  </label>
+                </div>
+                <div class="filter-box">
+                  <div class="filter-box__title active">
+                    <div class="filter-box__title-text">Price</div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.29289 9.29289C7.65338 8.93241 8.22061 8.90468 8.6129 9.2097L8.70711 9.29289L12 12.585L15.2929 9.29289C15.6534 8.93241 16.2206 8.90468 16.6129 9.2097L16.7071 9.29289C17.0676 9.65338 17.0953 10.2206 16.7903 10.6129L16.7071 10.7071L12.7071 14.7071C12.3466 15.0676 11.7794 15.0953 11.3871 14.7903L11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289Z"
+                          fill="#888682"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="slider">
+                    <img src="./assets/images/Price Line.png" />
+                    <div class="slider__text">
+                      <div class="slider__price-text">Price: $99 — $1999</div>
+                      <div class="slider__filter-text">Filter</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+              style="--col-xl: 9; --col-lg: 9; --col-md: 12; --col-sm: 12"
+            >
+              <div class="wrap-box" style="--gap: 20px">
+                <div class="filter-box">
+                  <div class="filter-box__title">
+                    <div class="filter-box__title-text">Devices</div>
+                    <form class="input" action="">
+                      <select class="input__box input__box--fix">
+                        <option>Shorting By</option>
+                      </select>
+                    </form>
+                  </div>
+                </div>
+                <div
+                  class="text-box text-box--style2 text-box--pb"
+                  style="--pb: 30px"
+                >
+                  <div class="row">
+                    <div
+                      class="col"
+                      style="
+                        --col-xl: 4;
+                        --col-lg: 6;
+                        --col-md: 12;
+                        --col-sm: 12;
+                      "
+                    >
+                      <a href="page-detail.html" class="product">
+                        <div class="product__img">
+                          <img
+                            src="./assets/images/product1.jpg"
+                            alt="product-img"
+                          />
+                        </div>
+                        <h3 class="product__name">S22 128GB</h3>
+                        <div class="product__price">From $299</div>
+                      </a>
+                    </div>
+                    <div
+                      class="col"
+                      style="
+                        --col-xl: 4;
+                        --col-lg: 6;
+                        --col-md: 12;
+                        --col-sm: 12;
+                      "
+                    >
+                      <a href="page-detail.html" class="product">
+                        <div class="product__img">
+                          <img
+                            src="./assets/images/product2.jpg"
+                            alt="product-img"
+                          />
+                        </div>
+                        <h3 class="product__name">Watch 4</h3>
+                        <div class="product__price">From $399</div>
+                      </a>
+                    </div>
+                    <div
+                      class="col"
+                      style="
+                        --col-xl: 4;
+                        --col-lg: 6;
+                        --col-md: 12;
+                        --col-sm: 12;
+                      "
+                    >
+                      <a href="page-detail.html" class="product">
+                        <div class="product__img">
+                          <img
+                            src="./assets/images/product3.jpg"
+                            alt="product-img"
+                          />
+                        </div>
+                        <h3 class="product__name">Z Fold 2</h3>
+                        <div class="product__price">From $499</div>
+                      </a>
+                    </div>
+                    <div
+                      class="col"
+                      style="
+                        --col-xl: 4;
+                        --col-lg: 6;
+                        --col-md: 12;
+                        --col-sm: 12;
+                      "
+                    >
+                      <a href="page-detail.html" class="product">
+                        <div class="product__img">
+                          <img
+                            src="./assets/images/product4.jpg"
+                            alt="product-img"
+                          />
+                        </div>
+                        <h3 class="product__name">Tab S7 FE</h3>
+                        <div class="product__price">From $699</div>
+                      </a>
+                    </div>
+                    <div
+                      class="col"
+                      style="
+                        --col-xl: 4;
+                        --col-lg: 6;
+                        --col-md: 12;
+                        --col-sm: 12;
+                      "
+                    >
+                      <a href="page-detail.html" class="product">
+                        <div class="product__img">
+                          <img
+                            src="./assets/images/product5.jpg"
+                            alt="product-img"
+                          />
+                        </div>
+                        <h3 class="product__name">The Freestyle</h3>
+                        <div class="product__price">From $899</div>
+                      </a>
+                    </div>
+                    <div
+                      class="col"
+                      style="
+                        --col-xl: 4;
+                        --col-lg: 6;
+                        --col-md: 12;
+                        --col-sm: 12;
+                      "
+                    >
+                      <a href="page-detail.html" class="product">
+                        <div class="product__img">
+                          <img
+                            src="./assets/images/product6.jpg"
+                            alt="product-img"
+                          />
+                        </div>
+                        <h3 class="product__name">Neo QLED 8K</h3>
+                        <div class="product__price">From $2,999</div>
+                      </a>
+                    </div>
+                    <div
+                      class="col"
+                      style="
+                        --col-xl: 4;
+                        --col-lg: 6;
+                        --col-md: 12;
+                        --col-sm: 12;
+                      "
+                    >
+                      <a href="page-detail.html" class="product">
+                        <div class="product__img">
+                          <img
+                            src="./assets/images/product7.jpg"
+                            alt="product-img"
+                          />
+                        </div>
+                        <h3 class="product__name">S22+ 256GB</h3>
+                        <div class="product__price">From $799</div>
+                      </a>
+                    </div>
+                    <div
+                      class="col"
+                      style="
+                        --col-xl: 4;
+                        --col-lg: 6;
+                        --col-md: 12;
+                        --col-sm: 12;
+                      "
+                    >
+                      <a href="page-detail.html" class="product">
+                        <div class="product__img">
+                          <img
+                            src="./assets/images/product8.jpg"
+                            alt="product-img"
+                          />
+                        </div>
+                        <h3 class="product__name">Buds Pro</h3>
+                        <div class="product__price">From $149</div>
+                      </a>
+                    </div>
+                    <div
+                      class="col"
+                      style="
+                        --col-xl: 4;
+                        --col-lg: 6;
+                        --col-md: 12;
+                        --col-sm: 12;
+                      "
+                    >
+                      <a href="page-detail.html" class="product">
+                        <div class="product__img">
+                          <img
+                            src="./assets/images/product9.jpg"
+                            alt="product-img"
+                          />
+                        </div>
+                        <h3 class="product__name">S22 Ultra</h3>
+                        <div class="product__price">From $999</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="pagination">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="fi:chevron-right">
+                      <path
+                        id="Vector"
+                        d="M8.75 3.5L5.25 7L8.75 10.5"
+                        stroke="#7B88A8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                  <div class="pagination__number">1</div>
+                  <div class="pagination__number active">2</div>
+                  <div class="pagination__number">3</div>
+                  <div class="pagination__number">4</div>
+                  <div class="pagination__number">...</div>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="fi:chevron-right">
+                      <path
+                        id="Vector"
+                        d="M5.25 10.5L8.75 7L5.25 3.5"
+                        stroke="#7B88A8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="footer__top footer__top--style2">
+          <div class="container">
+            <div class="footer__subcribe">
+              <div class="footer__title-top footer__title-top--style2">
+                Get help, find answers, download drivers, manuals and much more
+              </div>
+              <div class="footer__title-bottom footer__title-bottom--style2">
+                Contact us online through chat and get support from an expert
+              </div>
+              <a href="#" class="button button--blue">Chat Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__bottom-wrap">
+              <div class="row">
+                <div
+                  class="col"
+                  style="--col-xl: 2; --col-lg: 2; --col-md: 2; --col-sm: 2"
+                >
+                  <a href="#" class="logo">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="44"
+                      viewBox="0 0 32 44"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_312_1142)">
+                        <path
+                          d="M32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0C11.7565 0 7.68687 1.68571 4.68629 4.68629C1.68571 7.68687 0 11.7565 0 16C0 16.2133 3.91006e-07 16.4267 0.0170671 16.64V16H16.0171V32C20.2576 31.9955 24.3229 30.3078 27.3197 27.3077C30.3166 24.3076 32 20.2405 32 16Z"
+                          fill="#61DCDF"
+                        />
+                        <path
+                          d="M0 17V44H16V32.3071H15.9872C11.8545 32.3071 7.88218 30.7135 4.90207 27.8602C1.92197 25.0069 0.165306 21.1151 0 17Z"
+                          fill="#886CFF"
+                        />
+                        <path
+                          d="M0 16V16.64C0.165262 20.7693 1.92146 24.6746 4.90077 27.5378C7.88007 30.401 11.8514 32 15.9829 32H16V16H0Z"
+                          fill="#F9E492"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_312_1142">
+                          <rect width="32" height="44" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <h2 class="logo__text logo__text--white">Pollock</h2>
+                  </a>
+                </div>
+                <div
+                  class="col"
+                  style="--col-xl: 6; --col-lg: 6; --col-md: 12; --col-sm: 12"
+                >
+                  <div class="footer__menu-wrap">
+                    <div class="footer__menu">
+                      <div class="footer__menu-title">Company</div>
+                      <ul>
+                        <li class="footer__menu-nav"><a href="#">About</a></li>
+                        <li class="footer__menu-nav"><a href="#">Work</a></li>
+                        <li class="footer__menu-nav">
+                          <a href="#">Careers</a>
+                        </li>
+                        <li class="footer__menu-nav">
+                          <a href="#">Pricing</a>
+                        </li>
+                        <li class="footer__menu-nav"><a href="#">Blog</a></li>
+                      </ul>
+                    </div>
+                    <div class="footer__menu">
+                      <div class="footer__menu-title">Services</div>
+                      <ul>
+                        <li class="footer__menu-nav">
+                          <a href="#">Branding</a>
+                        </li>
+                        <li class="footer__menu-nav">
+                          <a href="#">Websites</a>
+                        </li>
+                        <li class="footer__menu-nav">
+                          <a href="#">Development</a>
+                        </li>
+                        <li class="footer__menu-nav">
+                          <a href="#">Strategy</a>
+                        </li>
+                        <li class="footer__menu-nav">
+                          <a href="#">Platforms</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="footer__menu">
+                      <div class="footer__menu-title">Contact</div>
+                      <ul>
+                        <li class="footer__menu-nav">
+                          <a href="#">Help Desk</a>
+                        </li>
+                        <li class="footer__menu-nav"><a href="#">Docs</a></li>
+                        <li class="footer__menu-nav">
+                          <a href="#">Open a Ticket</a>
+                        </li>
+                        <li class="footer__menu-nav"><a href="#">Chat</a></li>
+                        <li class="footer__menu-nav"><a href="#">Forum</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col"
+                  style="--col-xl: 4; --col-lg: 4; --col-md: 12; --col-sm: 12"
+                >
+                  <div class="footer__text-subcribe">
+                    <div class="footer__menu-title">Newsletter</div>
+                    <div class="footer__menu-text">
+                      Subscribe to our newsletter to keep up to date on our
+                      marketing, website, design services, and tips.
+                    </div>
+                    <form class="input" action="">
+                      <input
+                        class="input__box"
+                        type="text"
+                        placeholder="Enter email"
+                      />
+                      <button type="submit" class="button button--blue">
+                        Subscribe
+                      </button>
+                    </form>
+                    <div class="footer__menu-note">
+                      We hate spam as much as you do. We will never, ever send
+                      you such emails.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__policy">
+              <div class="footer__policy-text">
+                © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions.
+                Privacy Policy.
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="196"
+                height="52"
+                viewBox="0 0 196 52"
+                fill="none"
+              >
+                <circle cx="26" cy="26" r="26" fill="#4F77FF" />
+                <path
+                  d="M27.6497 35.893V26.0503H30.6079L31 22.5862H27.6497L27.6547 20.8522C27.6547 19.9487 27.7462 19.4648 29.1297 19.4648H30.9793V16H28.0204C24.4663 16 23.2155 17.6804 23.2155 20.5068V22.5864H21V26.0509H23.2155V35.7535C24.0786 35.9148 24.9709 36 25.8846 36C26.4748 36 27.0644 35.9643 27.6497 35.893Z"
+                  fill="white"
+                />
+                <circle cx="98" cy="26" r="26" fill="#4F77FF" />
+                <path
+                  d="M111 18.3677C110.033 18.7692 109.003 19.0354 107.929 19.1646C109.034 18.54 109.877 17.5585 110.274 16.3754C109.243 16.9569 108.106 17.3677 106.894 17.5969C105.915 16.6108 104.521 16 103 16C100.049 16 97.6734 18.2677 97.6734 21.0477C97.6734 21.4477 97.7091 21.8323 97.7969 22.1985C93.3655 21.9938 89.4444 19.9831 86.8102 16.92C86.3504 17.6754 86.0806 18.54 86.0806 19.4708C86.0806 21.2185 87.0312 22.7677 88.4483 23.6646C87.5919 23.6492 86.7517 23.4138 86.04 23.0431C86.04 23.0585 86.04 23.0785 86.04 23.0985C86.04 25.5508 87.8876 27.5877 90.3105 28.0569C89.8766 28.1692 89.4037 28.2231 88.913 28.2231C88.5717 28.2231 88.2272 28.2046 87.9039 28.1369C88.5945 30.1354 90.5543 31.6046 92.8845 31.6523C91.071 32.9954 88.7684 33.8046 86.2756 33.8046C85.8385 33.8046 85.4192 33.7862 85 33.7354C87.3611 35.1769 90.1594 36 93.177 36C102.986 36 108.348 28.3077 108.348 21.64C108.348 21.4169 108.34 21.2015 108.329 20.9877C109.386 20.2769 110.275 19.3892 111 18.3677Z"
+                  fill="white"
+                />
+                <circle cx="170" cy="26" r="26" fill="#4F77FF" />
+                <path
+                  d="M160 18.3232C160 17.6498 160.236 17.0943 160.709 16.6566C161.182 16.2188 161.797 16 162.554 16C163.297 16 163.899 16.2155 164.358 16.6465C164.831 17.0909 165.068 17.67 165.068 18.3838C165.068 19.0303 164.838 19.569 164.378 20C163.905 20.4444 163.284 20.6667 162.514 20.6667H162.493C161.75 20.6667 161.149 20.4444 160.689 20C160.23 19.5556 160 18.9966 160 18.3232ZM160.264 36V22.5051H164.764V36H160.264ZM167.257 36H171.757V28.4646C171.757 27.9933 171.811 27.6296 171.919 27.3737C172.108 26.9158 172.395 26.5286 172.78 26.2121C173.166 25.8956 173.649 25.7374 174.23 25.7374C175.743 25.7374 176.5 26.7542 176.5 28.7879V36H181V28.2626C181 26.2694 180.527 24.7576 179.581 23.7273C178.635 22.697 177.385 22.1818 175.831 22.1818C174.088 22.1818 172.73 22.9293 171.757 24.4242V24.4646H171.736L171.757 24.4242V22.5051H167.257C167.284 22.936 167.297 24.2761 167.297 26.5253C167.297 28.7744 167.284 31.9326 167.257 36Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

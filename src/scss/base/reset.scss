@@ -1,0 +1,63 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --grid: 12;
+  --grid-container-width: 1200px;
+  --grid-container-gap: 15px;
+  --grid-col-gap-vertical: 30px;
+  --grid-col-gap-horizontal: 30px;
+}
+
+body {
+  background-color: #fff;
+  color: $colorGrayText;
+  font-family: DM Sans, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Outfit;
+  font-weight: 500;
+  color: $colorBlackText;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+select {
+  appearance: none;
+  background-image: url("../../../assets/svg/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  cursor: pointer;
+}
+button {
+  border: none;
+  background-color: #fff;
+}
+textarea {
+  resize: none;
+}

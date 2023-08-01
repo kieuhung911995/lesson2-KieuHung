@@ -1,0 +1,35 @@
+.office {
+  padding: 100px 65px;
+  background-color: $colorPinkBox;
+  border-radius: 20px;
+}
+.office__title {
+  font-size: 36px;
+  line-height: 127.778%;
+  letter-spacing: -1px;
+}
+.office__item {
+  display: flex;
+  gap: 30px;
+}
+.office__item-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: $colorBlue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.office__item-detail {
+  width: 70%;
+}
+.office__item-title {
+  font-size: 18px;
+  line-height: 155.556%;
+  letter-spacing: 0.4px;
+}
+.office__item-content {
+  font-size: 16px;
+  line-height: 162.5%;
+}

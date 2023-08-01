@@ -1,0 +1,49 @@
+.setup {
+  background-color: $colorPinkBox;
+  height: 793px;
+  text-align: center;
+  padding: 120px 0;
+  margin-bottom: 380px;
+}
+.setup__title {
+  font-size: 48px;
+  line-height: 116.667%;
+  letter-spacing: -2px;
+}
+.setup__note {
+  font-family: Outfit;
+  font-size: 22px;
+  line-height: 145.455%;
+  letter-spacing: -1px;
+  padding-bottom: 100px;
+}
+.setup__feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 100px;
+}
+.setup__date {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.setup__date-text {
+  font-size: 18px;
+  line-height: 155.556%;
+  letter-spacing: -0.3px;
+}
+.setup__sale {
+  width: 85px;
+  height: 29px;
+  border-radius: 5px;
+  background: $colorGreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 171.429%;
+  letter-spacing: -0.3px;
+}

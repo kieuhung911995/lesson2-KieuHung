@@ -1,0 +1,11 @@
+.wrap-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap);
+}
+.wrap-box--multi {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--multi-gap);
+}

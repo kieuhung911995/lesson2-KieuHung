@@ -1,0 +1,23 @@
+.filter-box {
+  width: 100%;
+}
+.filter-box__title {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $colorGrayLine;
+}
+.filter-box__title-text {
+  color: $colorBlackText;
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 155.556%;
+  letter-spacing: 0.4px;
+}
+.filter-box__title.active svg {
+  rotate: 180deg;
+}

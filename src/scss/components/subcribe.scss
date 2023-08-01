@@ -1,0 +1,39 @@
+.subcribe {
+  position: relative;
+  height: 400px;
+}
+.subcribe__img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.subcribe__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  opacity: 0.699999988079071;
+  background: #321370;
+}
+.subcribe__detail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.subcribe__title {
+  color: #fff;
+  font-family: Outfit;
+  font-size: 22px;
+  line-height: 145.455%;
+  letter-spacing: -1px;
+  width: 170px;
+  text-align: center;
+}

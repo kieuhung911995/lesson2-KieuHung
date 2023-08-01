@@ -1,0 +1,78 @@
+.salecard {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid $colorGrayLine;
+  background: #fff;
+  padding: 30px 100px 0;
+  text-align: center;
+  &.last-child::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -70px;
+    width: 60px;
+    height: 60px;
+    background-color: $colorYellow;
+    border-radius: 50%;
+    border-bottom-left-radius: 0px;
+  }
+}
+.salecard-header {
+  color: $colorBlue;
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 155.556%;
+  letter-spacing: 0.4px;
+  padding-bottom: 30px;
+}
+.salecard-price {
+  font-size: 36px;
+  line-height: 127.778%;
+  letter-spacing: -1px;
+  padding-bottom: 15px;
+  span {
+    font-size: 64px;
+  }
+}
+.salecard-note {
+  font-size: 16px;
+  line-height: 162.5%;
+  padding-bottom: 30px;
+}
+.salecard__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  padding-bottom: 120px;
+  li {
+    color: $colorBlackText;
+    font-family: Outfit;
+    font-size: 22px;
+    line-height: 145.455%;
+    letter-spacing: -1px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}
+.salecard__nav {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: $colorBlue;
+  color: #fff;
+  font-family: Outfit;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

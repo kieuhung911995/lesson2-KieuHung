@@ -1,0 +1,118 @@
+.workspace {
+  background-color: $colorPinkBox;
+  padding: 110px 0 260px;
+}
+.workspace__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 80px;
+}
+.workspace__title {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -2px;
+  text-align: center;
+  span {
+    background: -webkit-linear-gradient(224deg, #61dcdf 0%, #886cff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  width: 75%;
+}
+.workspace__note {
+  font-size: 18px;
+  line-height: 155.556%;
+  letter-spacing: -0.3px;
+}
+.workspace__main {
+  position: relative;
+}
+.workspace__text {
+  position: relative;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 60px 40px 0px rgba(18, 2, 47, 0.1);
+  padding: 60px 100px 40px;
+  width: 50%;
+  z-index: 1;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 200px;
+    right: -70px;
+    width: 60px;
+    height: 60px;
+    background-color: $colorYellow;
+    border-radius: 50%;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+.workspace__header-box {
+  color: $colorBlue;
+  font-size: 18px;
+  line-height: 155.556%;
+  letter-spacing: -0.3px;
+  padding-bottom: 30px;
+}
+.workspace__title-box {
+  font-size: 36px;
+  line-height: 127.778%;
+  letter-spacing: -1px;
+  padding-bottom: 30px;
+}
+.workspace__content {
+  font-size: 18px;
+  line-height: 155.556%;
+  letter-spacing: -0.3px;
+  padding-bottom: 40px;
+}
+.workspace__nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 55px;
+}
+.workspace__nav-text {
+  font-family: Outfit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 171.429%;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+}
+.workspace__bar {
+  text-align: center;
+}
+.workspace__img-lg {
+  width: 870px;
+  img {
+    border-radius: 20px;
+  }
+  position: absolute;
+  top: 265px;
+  right: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: -70px;
+    width: 60px;
+    height: 60px;
+    background-color: $colorPurple;
+    border-radius: 50%;
+    border-bottom-left-radius: 0px;
+  }
+}
+.workspace__img-sm {
+  width: 370px;
+  img {
+    border-radius: 20px;
+  }
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  z-index: 1;
+}

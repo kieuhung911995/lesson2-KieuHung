@@ -1,0 +1,91 @@
+.text-box {
+  border-radius: 5px;
+  border: 1px solid $colorGrayLine;
+  background-color: #fff;
+}
+.text-box--style2 {
+  border: none;
+  border-bottom: 1px solid $colorGrayLine2;
+  border-radius: 0px;
+}
+.text-box--pb {
+  padding-bottom: var(--pb);
+}
+.text-box__img {
+  width: 100%;
+  img {
+    border-radius: 5px;
+  }
+}
+.text-box__img--style2 {
+  img {
+    border-radius: 0;
+  }
+}
+.text-box__wrap-text {
+  padding: 30px 40px 50px;
+}
+.text-box__wrap-text--style2 {
+  padding-bottom: 20px;
+}
+.text-box__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-box__artist {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.text-box__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.text-box__name {
+  font-family: Outfit;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+}
+.text-box__date {
+  font-family: Outfit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 171.429%;
+  letter-spacing: 0.4px;
+}
+.text-box__title {
+  padding: 35px 0;
+  font-size: 36px;
+  line-height: 127.778%;
+  letter-spacing: -1px;
+}
+.text-box__content {
+  font-size: 16px;
+  line-height: 162.5%;
+  padding-bottom: 40px;
+}
+.text-box__content--style2 {
+  color: $colorBlackText;
+}
+.text-box__blue-text {
+  color: $colorBlue;
+}
+.text-box__quote {
+  border-radius: 5px;
+  background-color: $colorGrayBox;
+  padding: 30px 50px;
+  color: $colorBlackText;
+  font-size: 18px;
+  line-height: 155.556%;
+  letter-spacing: -0.3px;
+}
+.text-box__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

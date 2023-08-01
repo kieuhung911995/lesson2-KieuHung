@@ -1,0 +1,17 @@
+.comment-box {
+  width: 100%;
+  padding: 0px 30px 70px;
+  border: 1px solid $colorGrayLine2;
+}
+
+.comment-box__title {
+  color: $colorBlackText;
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 155.556%;
+  letter-spacing: 0.4px;
+  padding: 40px 0 30px;
+}
+.comment-box__input {
+}

@@ -1,0 +1,50 @@
+.project {
+  padding: 120px 0px;
+}
+.project__title {
+  font-size: 48px;
+  line-height: 116.667%;
+  letter-spacing: -2px;
+  padding-bottom: 70px;
+}
+.project__carousel {
+  position: relative;
+}
+.project__detail {
+  position: relative;
+}
+.project__img {
+  img {
+    border-radius: 16px;
+  }
+}
+.project__scroll {
+  position: absolute;
+  top: -80px;
+  right: 0;
+  cursor: pointer;
+}
+.project__carousel-text {
+  text-align: center;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.project__carousel-title {
+  color: #fff;
+  font-family: Outfit;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 145.455%;
+  letter-spacing: -1px;
+  padding-bottom: 20px;
+}
+.project__carousel-note {
+  color: $colorGrayLine;
+  font-family: DM Sans;
+  font-size: 18px;
+  line-height: 155.556%;
+  letter-spacing: -0.3px;
+  width: 300px;
+}
