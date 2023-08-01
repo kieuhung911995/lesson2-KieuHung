@@ -1,10 +1,10 @@
 @font-face {
   font-family: DM Sans;
-  src: url("../../../assets/fonts/DMSans-VariableFont_opsz,wght.ttf");
+  src: url("../../assets/fonts/DMSans-VariableFont_opsz,wght.ttf");
 }
 @font-face {
   font-family: Outfit;
-  src: url("../../../assets/fonts/Outfit-VariableFont_wght.ttf");
+  src: url("../../assets/fonts/Outfit-VariableFont_wght.ttf");
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -467,13 +467,13 @@ textarea {
 
 .header {
   position: relative;
-  background-image: url("../../../assets/images/background-header.jpg");
+  background-image: url("../../assets/images/background-header.jpg");
   background-size: 100% 100%;
   height: 500px;
 }
 
 .header--style2 {
-  background-image: url("../../../assets/images/header-bg2.jpg");
+  background-image: url("../../assets/images/header-bg2.jpg");
   height: 950px;
 }
 
@@ -658,6 +658,7 @@ textarea {
   justify-content: center;
   align-items: center;
   padding: 0 24px;
+  width: fit-content;
   height: 48px;
   border-radius: 5px;
   font-family: Outfit;
@@ -989,13 +990,13 @@ textarea {
 
 .footer__top {
   position: relative;
-  background-image: url("../../../assets/images/footer-bg.jpg");
+  background-image: url("../../assets/images/footer-bg.jpg");
   background-size: 100% 100%;
   height: 500px;
 }
 
 .footer__top--style2 {
-  background-image: url("../../../assets/images/footer-bg2.jpg");
+  background-image: url("../../assets/images/footer-bg2.jpg");
 }
 
 .footer__subcribe {
