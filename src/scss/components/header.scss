@@ -8,7 +8,8 @@
   background-image: url("../../assets/images/header-bg2.jpg");
   height: 950px;
   @media (max-width: 1199px) {
-    background-image: url("../../assets/images/background-header.jpg");
+    background-image: none;
+    background-color: $colorPinkBox;
     height: 700px;
   }
 }
@@ -47,6 +48,11 @@
       background-color: $colorGreen;
     }
   }
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 .header__feature {
   display: flex;

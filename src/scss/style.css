@@ -478,7 +478,8 @@ textarea {
 }
 @media (max-width: 1199px) {
   .header--style2 {
-    background-image: url("../../assets/images/background-header.jpg");
+    background-image: none;
+    background-color: #f7f5f1;
     height: 700px;
   }
 }
@@ -519,6 +520,12 @@ textarea {
   height: 10px;
   border-radius: 50%;
   background-color: #34c635;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .header__feature {
