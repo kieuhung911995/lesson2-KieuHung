@@ -804,6 +804,9 @@ textarea {
   line-height: 127.778%;
   letter-spacing: -1px;
 }
+.text-box__title a:hover {
+  color: #4f77ff;
+}
 
 .text-box__content {
   font-size: 16px;
@@ -996,6 +999,14 @@ textarea {
   width: 100%;
   height: 100%;
   border-radius: 5px;
+  overflow: hidden;
+}
+.subcribe__img img {
+  transition: all 0.3s ease-in-out;
+}
+
+.subcribe__img:hover img {
+  transform: scale(1.1);
 }
 
 .subcribe__overlay {
@@ -1151,6 +1162,25 @@ textarea {
   border-top: solid 1px #7b88a8;
 }
 
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__social-icon {
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  background-color: #4f77ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__social-icon:hover {
+  background-color: #34c635;
+}
+
 .new-related:hover .new-related__text {
   color: #4f77ff;
 }
@@ -1279,6 +1309,16 @@ textarea {
   padding-bottom: 15px;
   margin-bottom: 20px;
   border-bottom: 1px solid #e7e5ea;
+  cursor: pointer;
+}
+
+.filter-box__content {
+  height: 0;
+  opacity: 0;
+}
+.filter-box__content.active {
+  height: 100%;
+  opacity: 1;
 }
 
 .filter-box__title-text {
@@ -1458,6 +1498,7 @@ textarea {
 .product-detail__content {
   font-size: 16px;
   line-height: 162.5%;
+  padding-bottom: 10px;
 }
 .product-detail__content a {
   color: #4f77ff;
@@ -1467,13 +1508,54 @@ textarea {
   font-size: 18px;
   line-height: 155.556%;
   letter-spacing: 0.4px;
+  padding-bottom: 30px;
 }
 
-.product-detail__colors-circle {
+.product-detail__circles {
   display: flex;
-  gap: 5px;
+  gap: 10px;
 }
-.product-detail__colors-circle svg {
+
+.product-detail__color {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 1px #e7e5ea;
+  cursor: pointer;
+}
+
+.product-detail__color--pink {
+  background-color: #f7f5f1;
+}
+
+.product-detail__color--green {
+  background-color: #5e756f;
+}
+
+.product-detail__color--pink2 {
+  background-color: #f2e0dc;
+}
+
+.product-detail__social {
+  display: flex;
+  align-items: center;
+}
+
+.product-detail__like {
+  cursor: pointer;
+  padding-right: 40px;
+  border-right: solid 1px #e7e5ea;
+  display: flex;
+  align-items: center;
+}
+
+.product-detail__contact {
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.product-detail__contact svg {
   cursor: pointer;
 }
 

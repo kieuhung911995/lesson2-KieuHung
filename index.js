@@ -1,12 +1,12 @@
-// function openNav(param) {
-//   let overlay = document.getElementsByClassName("header__overlay");
-//   param.classList.toggle("change");
-//   overlay[0].classList.toggle("change");
-//   console.log(overlay[0].classList);
-// }
-// function pageNavigate(x) {
-//   x.classList.add("active");
-// }
-//
-// let search = document.getElementsByClassName("header__search");
-// search[0].addEventListener("click", function () {});
+//page
+let filterTitle = document.querySelectorAll(".filter-box__title");
+let filterContent = document.querySelectorAll(
+  ".filter-box__title + .filter-box__content"
+);
+
+for (let i = 0; i < filterTitle.length - 1; i++) {
+  filterTitle[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    filterContent[i].classList.toggle("active");
+  });
+}

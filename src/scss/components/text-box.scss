@@ -69,6 +69,9 @@
   font-size: 36px;
   line-height: 127.778%;
   letter-spacing: -1px;
+  a:hover {
+    color: $colorBlue;
+  }
 }
 .text-box__content {
   font-size: 16px;

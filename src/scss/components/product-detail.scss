@@ -16,6 +16,7 @@
 .product-detail__content {
   font-size: 16px;
   line-height: 162.5%;
+  padding-bottom: 10px;
   a {
     color: $colorBlue;
   }
@@ -24,10 +25,44 @@
   font-size: 18px;
   line-height: 155.556%;
   letter-spacing: 0.4px;
+  padding-bottom: 30px;
 }
-.product-detail__colors-circle {
+.product-detail__circles {
   display: flex;
-  gap: 5px;
+  gap: 10px;
+}
+.product-detail__color {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 1px $colorGrayLine;
+  cursor: pointer;
+}
+.product-detail__color--pink {
+  background-color: $colorPinkBox;
+}
+.product-detail__color--green {
+  background-color: $colorGreenProduct;
+}
+.product-detail__color--pink2 {
+  background-color: $colorPink2Product;
+}
+.product-detail__social {
+  display: flex;
+  align-items: center;
+}
+.product-detail__like {
+  cursor: pointer;
+  padding-right: 40px;
+  border-right: solid 1px $colorGrayLine;
+  display: flex;
+  align-items: center;
+}
+.product-detail__contact {
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
   svg {
     cursor: pointer;
   }

@@ -104,3 +104,20 @@
   padding: 20px 0;
   border-top: solid 1px $colorGrayText;
 }
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer__social-icon {
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  background-color: $colorBlue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: $colorGreen;
+  }
+}

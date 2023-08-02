@@ -9,6 +9,15 @@
   padding-bottom: 15px;
   margin-bottom: 20px;
   border-bottom: 1px solid $colorGrayLine;
+  cursor: pointer;
+}
+.filter-box__content {
+  height: 0;
+  opacity: 0;
+  &.active {
+    height: 100%;
+    opacity: 1;
+  }
 }
 .filter-box__title-text {
   color: $colorBlackText;
