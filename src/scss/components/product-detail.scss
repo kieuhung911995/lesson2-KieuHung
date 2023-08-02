@@ -28,6 +28,9 @@
 .product-detail__colors-circle {
   display: flex;
   gap: 5px;
+  svg {
+    cursor: pointer;
+  }
 }
 .product-detail__info {
   padding: 10px 0;

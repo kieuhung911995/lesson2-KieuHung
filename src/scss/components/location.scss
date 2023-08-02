@@ -4,9 +4,8 @@
 .location__img {
   position: relative;
   margin-bottom: 40px;
-  img {
-    border-radius: 20px;
-  }
+  cursor: pointer;
+  border-radius: 20px;
 }
 .location__img::before {
   content: "";
@@ -81,7 +80,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &:last-child {
+  cursor: pointer;
+  &:hover {
     box-shadow: 0px 20px 50px rgba(79, 119, 255, 0.2);
   }
 }

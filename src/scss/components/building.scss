@@ -31,7 +31,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  &.active {
+  cursor: pointer;
+  &:hover {
     box-shadow: 0px 20px 50px 0px rgba(79, 119, 255, 0.2);
   }
   &.last-child::after {
@@ -47,7 +48,22 @@
   }
 }
 .building__icon {
-  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 40px;
+}
+.building__icon--purple {
+  background-color: $colorPurpleOpacity;
+}
+.building__icon--blue {
+  background-color: $colorBlueOpacity;
+}
+.building__icon--orange {
+  background-color: $colorOrangeOpacity;
 }
 .building__item-title {
   color: $colorBlackText2;

@@ -74,6 +74,9 @@
   align-items: center;
   gap: 15px;
   padding-bottom: 55px;
+  &:hover {
+    color: $colorBlue;
+  }
 }
 .workspace__nav-text {
   font-family: Outfit;
@@ -88,9 +91,7 @@
 }
 .workspace__img-lg {
   width: 870px;
-  img {
-    border-radius: 20px;
-  }
+  border-radius: 20px;
   position: absolute;
   top: 265px;
   right: 0;
@@ -108,11 +109,12 @@
 }
 .workspace__img-sm {
   width: 370px;
-  img {
-    border-radius: 20px;
-  }
+  border-radius: 20px;
   position: absolute;
   top: 80px;
   right: 80px;
   z-index: 1;
+  img {
+    border-radius: 20px;
+  }
 }

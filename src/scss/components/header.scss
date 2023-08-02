@@ -7,6 +7,10 @@
 .header--style2 {
   background-image: url("../../assets/images/header-bg2.jpg");
   height: 950px;
+  @media (max-width: 1199px) {
+    background-image: url("../../assets/images/background-header.jpg");
+    height: 700px;
+  }
 }
 .header__top {
   padding-top: 16px;
@@ -47,6 +51,9 @@
 .header__feature {
   display: flex;
   gap: 20px;
+}
+.header__search {
+  cursor: pointer;
 }
 .header__cart {
   position: relative;
@@ -114,6 +121,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  @media (max-width: 1199px) {
+    width: 100%;
+  }
 }
 .header__content-note {
   font-size: 18px;
@@ -122,6 +132,9 @@
   width: 57%;
   text-align: center;
   padding-bottom: 70px;
+  @media (max-width: 1199px) {
+    width: 100%;
+  }
 }
 .header__button {
   display: flex;

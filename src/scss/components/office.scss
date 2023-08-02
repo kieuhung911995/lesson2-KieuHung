@@ -16,10 +16,15 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: $colorBlue;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.office__item-icon--blue {
+  background-color: $colorBlue;
+}
+.office__item-icon--purple {
+  background-color: $colorPurple;
 }
 .office__item-detail {
   width: 70%;

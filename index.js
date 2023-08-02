@@ -7,4 +7,6 @@
 // function pageNavigate(x) {
 //   x.classList.add("active");
 // }
-//slider
+//
+// let search = document.getElementsByClassName("header__search");
+// search[0].addEventListener("click", function () {});

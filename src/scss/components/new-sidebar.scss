@@ -1,13 +1,21 @@
 .new-sidebar {
   display: flex;
   gap: 20px;
+  cursor: pointer;
 }
 .new-sidebar__img {
   width: 50px;
   height: 50px;
+  overflow: hidden;
   img {
-    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
   }
+}
+.new-sidebar__img:hover img {
+  transform: scale(1.1);
+}
+.new-sidebar:hover .new-sidebar__text {
+  color: $colorBlue;
 }
 .new-sidebar__text {
   width: 65%;
