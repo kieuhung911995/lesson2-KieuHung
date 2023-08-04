@@ -38,7 +38,10 @@
   padding-bottom: 30px;
 }
 .salecard__price {
+  color: $colorBlackText;
+  font-family: Outfit;
   font-size: 36px;
+  font-weight: 500;
   line-height: 127.778%;
   letter-spacing: -1px;
   padding-bottom: 15px;

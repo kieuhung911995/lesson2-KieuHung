@@ -2878,6 +2878,9 @@ textarea {
   align-items: center;
   gap: 15px;
 }
+.setup__date svg {
+  cursor: pointer;
+}
 
 .setup__date-text {
   font-size: 18px;
@@ -2947,7 +2950,10 @@ textarea {
 }
 
 .salecard__price {
+  color: #2d3958;
+  font-family: Outfit;
   font-size: 36px;
+  font-weight: 500;
   line-height: 127.778%;
   letter-spacing: -1px;
   padding-bottom: 15px;
