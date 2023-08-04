@@ -2,11 +2,15 @@
   padding: 100px 65px;
   background-color: $colorPinkBox;
   border-radius: 20px;
+  @media (max-width: 575px) {
+    padding: 80px 15px;
+  }
 }
 .office__title {
   font-size: 36px;
   line-height: 127.778%;
   letter-spacing: -1px;
+  text-align: center;
 }
 .office__item {
   display: flex;

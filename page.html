@@ -11,7 +11,7 @@
       <div class="header">
         <div class="container">
           <div class="header__top">
-            <a href="index.html" class="logo">
+            <a href="#" class="logo">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -42,22 +42,22 @@
               <h2 class="logo__text">Pollock</h2>
             </a>
             <ul class="header__menu">
-              <li class="header__nav" onclick="pageNavigate(this)">
+              <li class="header__nav">
                 <a href="index.html">Home</a>
               </li>
-              <li class="header__nav" onclick="pageNavigate(this)">
+              <li class="header__nav">
                 <a href="service.html">Services</a>
               </li>
-              <li class="header__nav" onclick="pageNavigate(this)">
+              <li class="header__nav">
                 <a href="about.html">About</a>
               </li>
-              <li class="header__nav active" onclick="pageNavigate(this)">
+              <li class="header__nav active">
                 <a href="page.html">Pages</a>
               </li>
-              <li class="header__nav" onclick="pageNavigate(this)">
+              <li class="header__nav">
                 <a href="blog.html">Blog</a>
               </li>
-              <li class="header__nav" onclick="pageNavigate(this)">
+              <li class="header__nav">
                 <a href="contact.html">Contact</a>
               </li>
             </ul>
@@ -121,6 +121,91 @@
               </div>
               <div class="button button--blue">Sign Up</div>
             </div>
+            <div class="header__bar">
+              <div class="bar bar--1"></div>
+              <div class="bar bar--2"></div>
+              <div class="bar bar--3"></div>
+            </div>
+            <div class="header__overlay">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="service.html">Services</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="page.html">Pages</a>
+                </li>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+              <div class="overlay__button">
+                <div class="header__search">
+                  <svg
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Search">
+                      <circle
+                        id="Ellipse"
+                        cx="9"
+                        cy="9"
+                        r="8"
+                        stroke="#7B88A8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        id="Line"
+                        d="M14.5 14.958L19.5 19.958"
+                        stroke="#7B88A8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="header__cart active">
+                  <svg
+                    width="20"
+                    height="22"
+                    viewBox="0 0 20 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Bag 2">
+                      <path
+                        id="Rectangle 2"
+                        d="M2.53715 9.47134C2.80212 7.48412 4.49726 6 6.50207 6H13.4979C15.5027 6 17.1979 7.48412 17.4628 9.47135L18.3962 16.4713C18.7159 18.8693 16.8504 21 14.4313 21H5.56873C3.14958 21 1.2841 18.8693 1.60382 16.4713L2.53715 9.47134Z"
+                        stroke="#7B88A8"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        id="Rectangle 4"
+                        d="M14 8V5C14 2.79086 12.2091 1 10 1V1C7.79086 1 6 2.79086 6 5L6 8"
+                        stroke="#7B88A8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <button class="button button--blue">Sign up</button>
+              </div>
+            </div>
           </div>
           <div class="header__name-page">
             <h1 class="header__tilte-top">Our Shop</h1>
@@ -137,7 +222,13 @@
           <div class="row">
             <div
               class="col"
-              style="--col-xl: 3; --col-lg: 3; --col-md: 12; --col-sm: 12"
+              style="
+                --col-xl: 3;
+                --col-lg: 3;
+                --col-md: 3;
+                --col-sm: 5;
+                --col-xs: 0;
+              "
             >
               <div class="wrap-box" style="--gap: 50px">
                 <div class="filter-box">
@@ -352,7 +443,13 @@
             </div>
             <div
               class="col"
-              style="--col-xl: 9; --col-lg: 9; --col-md: 12; --col-sm: 12"
+              style="
+                --col-xl: 9;
+                --col-lg: 9;
+                --col-md: 9;
+                --col-sm: 7;
+                --col-xs: 12;
+              "
             >
               <div class="wrap-box" style="--gap: 20px">
                 <div class="filter-box">
@@ -365,6 +462,10 @@
                     </form>
                   </div>
                 </div>
+                <div class="filter-box__icon">
+                  <i class="fa-solid fa-filter"></i>
+                  <div>Filter</div>
+                </div>
                 <div
                   class="text-box text-box--style2 text-box--pb"
                   style="--pb: 30px"
@@ -374,9 +475,10 @@
                       class="col"
                       style="
                         --col-xl: 4;
-                        --col-lg: 6;
-                        --col-md: 12;
+                        --col-lg: 4;
+                        --col-md: 6;
                         --col-sm: 12;
+                        --col-xs: 12;
                       "
                     >
                       <a href="page-detail.html" class="product">
@@ -394,9 +496,10 @@
                       class="col"
                       style="
                         --col-xl: 4;
-                        --col-lg: 6;
-                        --col-md: 12;
+                        --col-lg: 4;
+                        --col-md: 6;
                         --col-sm: 12;
+                        --col-xs: 12;
                       "
                     >
                       <a href="page-detail.html" class="product">
@@ -414,9 +517,10 @@
                       class="col"
                       style="
                         --col-xl: 4;
-                        --col-lg: 6;
-                        --col-md: 12;
+                        --col-lg: 4;
+                        --col-md: 6;
                         --col-sm: 12;
+                        --col-xs: 12;
                       "
                     >
                       <a href="page-detail.html" class="product">
@@ -434,9 +538,10 @@
                       class="col"
                       style="
                         --col-xl: 4;
-                        --col-lg: 6;
-                        --col-md: 12;
+                        --col-lg: 4;
+                        --col-md: 6;
                         --col-sm: 12;
+                        --col-xs: 12;
                       "
                     >
                       <a href="page-detail.html" class="product">
@@ -454,9 +559,10 @@
                       class="col"
                       style="
                         --col-xl: 4;
-                        --col-lg: 6;
-                        --col-md: 12;
+                        --col-lg: 4;
+                        --col-md: 6;
                         --col-sm: 12;
+                        --col-xs: 12;
                       "
                     >
                       <a href="page-detail.html" class="product">
@@ -474,9 +580,10 @@
                       class="col"
                       style="
                         --col-xl: 4;
-                        --col-lg: 6;
-                        --col-md: 12;
+                        --col-lg: 4;
+                        --col-md: 6;
                         --col-sm: 12;
+                        --col-xs: 12;
                       "
                     >
                       <a href="page-detail.html" class="product">
@@ -494,9 +601,10 @@
                       class="col"
                       style="
                         --col-xl: 4;
-                        --col-lg: 6;
-                        --col-md: 12;
+                        --col-lg: 4;
+                        --col-md: 6;
                         --col-sm: 12;
+                        --col-xs: 12;
                       "
                     >
                       <a href="page-detail.html" class="product">
@@ -514,9 +622,10 @@
                       class="col"
                       style="
                         --col-xl: 4;
-                        --col-lg: 6;
-                        --col-md: 12;
+                        --col-lg: 4;
+                        --col-md: 6;
                         --col-sm: 12;
+                        --col-xs: 12;
                       "
                     >
                       <a href="page-detail.html" class="product">
@@ -534,9 +643,10 @@
                       class="col"
                       style="
                         --col-xl: 4;
-                        --col-lg: 6;
-                        --col-md: 12;
+                        --col-lg: 4;
+                        --col-md: 6;
                         --col-sm: 12;
+                        --col-xs: 12;
                       "
                     >
                       <a href="page-detail.html" class="product">
@@ -622,9 +732,9 @@
               <div class="row">
                 <div
                   class="col"
-                  style="--col-xl: 2; --col-lg: 2; --col-md: 2; --col-sm: 2"
+                  style="--col-xl: 2; --col-lg: 12; --col-md: 12; --col-sm: 12"
                 >
-                  <a href="index.html" class="logo">
+                  <a href="#" class="logo">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
@@ -657,7 +767,7 @@
                 </div>
                 <div
                   class="col"
-                  style="--col-xl: 6; --col-lg: 6; --col-md: 12; --col-sm: 12"
+                  style="--col-xl: 6; --col-lg: 7; --col-md: 12; --col-sm: 12"
                 >
                   <div class="footer__menu-wrap">
                     <div class="footer__menu">
@@ -712,7 +822,7 @@
                 </div>
                 <div
                   class="col"
-                  style="--col-xl: 4; --col-lg: 4; --col-md: 12; --col-sm: 12"
+                  style="--col-xl: 4; --col-lg: 5; --col-md: 12; --col-sm: 12"
                 >
                   <div class="footer__text-subcribe">
                     <div class="footer__menu-title">Newsletter</div>
@@ -792,6 +902,10 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/a30bab511d.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./index.js"></script>
   </body>
 </html>

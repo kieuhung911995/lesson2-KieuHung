@@ -1,8 +1,11 @@
 .room {
-  padding: 100px 0 80px;
+  padding: 100px 60px 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 575px) {
+    padding: 100px 15px 80px;
+  }
 }
 .room__title {
   font-size: 42px;
@@ -15,6 +18,12 @@
     background: -webkit-linear-gradient(224deg, #61dcdf 0%, #886cff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  @media (max-width: 767px) {
+    font-size: 35px;
+  }
+  @media (max-width: 575px) {
+    font-size: 30px;
   }
 }
 .room__img {
@@ -34,6 +43,9 @@
     background-color: $colorBlue;
     border-radius: 50%;
     border-bottom-right-radius: 0px;
+    @media (max-width: 1199px) {
+      content: none;
+    }
   }
 }
 .img__city {

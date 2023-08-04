@@ -9,6 +9,12 @@
 }
 .project__carousel {
   position: relative;
+  @media (max-width: 991px) {
+    padding: 0 100px;
+  }
+  @media (max-width: 575px) {
+    padding: 0;
+  }
 }
 .project__detail {
   position: relative;
@@ -32,6 +38,11 @@
   cursor: pointer;
   display: flex;
   gap: 15px;
+  @media (max-width: 575px) {
+    position: static;
+    padding-top: 20px;
+    justify-content: center;
+  }
 }
 .project__arrow {
   width: fit-content;

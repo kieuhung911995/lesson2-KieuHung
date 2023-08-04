@@ -2,13 +2,18 @@
   background-color: $colorPinkBox;
   height: 793px;
   text-align: center;
-  padding: 120px 0;
+  padding: 120px 0px;
   margin-bottom: 380px;
+  @media (max-width: 991px) {
+    height: 100%;
+    margin-bottom: 100px;
+  }
 }
 .setup__title {
   font-size: 48px;
   line-height: 116.667%;
   letter-spacing: -2px;
+  padding-bottom: 30px;
 }
 .setup__note {
   font-family: Outfit;
@@ -23,6 +28,12 @@
   align-items: center;
   gap: 15px;
   padding-bottom: 100px;
+}
+.setup__wrap {
+  padding: 0 60px;
+  @media (max-width: 575px) {
+    padding: 0 15px;
+  }
 }
 .setup__date {
   display: flex;

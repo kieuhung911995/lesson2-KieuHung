@@ -42,22 +42,22 @@
               <h2 class="logo__text">Pollock</h2>
             </a>
             <ul class="header__menu">
-              <li class="header__nav active" onclick="pageNavigate(this)">
+              <li class="header__nav active">
                 <a href="index.html">Home</a>
               </li>
-              <li class="header__nav" onclick="pageNavigate(this)">
+              <li class="header__nav">
                 <a href="service.html">Services</a>
               </li>
-              <li class="header__nav" onclick="pageNavigate(this)">
+              <li class="header__nav">
                 <a href="about.html">About</a>
               </li>
-              <li class="header__nav" onclick="pageNavigate(this)">
+              <li class="header__nav">
                 <a href="page.html">Pages</a>
               </li>
-              <li class="header__nav" onclick="pageNavigate(this)">
+              <li class="header__nav">
                 <a href="blog.html">Blog</a>
               </li>
-              <li class="header__nav" onclick="pageNavigate(this)">
+              <li class="header__nav">
                 <a href="contact.html">Contact</a>
               </li>
             </ul>
@@ -120,6 +120,91 @@
                 </div>
               </div>
               <div class="button button--blue">Sign Up</div>
+            </div>
+            <div class="header__bar">
+              <div class="bar bar--1"></div>
+              <div class="bar bar--2"></div>
+              <div class="bar bar--3"></div>
+            </div>
+            <div class="header__overlay">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="service.html">Services</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="page.html">Pages</a>
+                </li>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+              <div class="overlay__button">
+                <div class="header__search">
+                  <svg
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Search">
+                      <circle
+                        id="Ellipse"
+                        cx="9"
+                        cy="9"
+                        r="8"
+                        stroke="#7B88A8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        id="Line"
+                        d="M14.5 14.958L19.5 19.958"
+                        stroke="#7B88A8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="header__cart active">
+                  <svg
+                    width="20"
+                    height="22"
+                    viewBox="0 0 20 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Bag 2">
+                      <path
+                        id="Rectangle 2"
+                        d="M2.53715 9.47134C2.80212 7.48412 4.49726 6 6.50207 6H13.4979C15.5027 6 17.1979 7.48412 17.4628 9.47135L18.3962 16.4713C18.7159 18.8693 16.8504 21 14.4313 21H5.56873C3.14958 21 1.2841 18.8693 1.60382 16.4713L2.53715 9.47134Z"
+                        stroke="#7B88A8"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        id="Rectangle 4"
+                        d="M14 8V5C14 2.79086 12.2091 1 10 1V1C7.79086 1 6 2.79086 6 5L6 8"
+                        stroke="#7B88A8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <button class="button button--blue">Sign up</button>
+              </div>
             </div>
           </div>
           <div class="header__content-box">
@@ -533,7 +618,7 @@
               </div>
               <div
                 class="col"
-                style="--col-xl: 1; --col-lg: 1; --col-md: 0; --col-sm: 0"
+                style="--col-xl: 1; --col-lg: 0; --col-md: 0; --col-sm: 0"
               ></div>
               <div
                 class="col"
@@ -772,257 +857,259 @@
                 <div class="setup__sale">Save 20%</div>
               </div>
             </div>
-            <div class="row">
-              <div
-                class="col"
-                style="--col-xl: 6; --col-lg: 6; --col-md: 12; --col-sm: 12"
-              >
-                <div class="salecard">
-                  <div class="salecard__header">Freelance</div>
-                  <h3 class="salecard__price">$<span>19</span>/mo</h3>
-                  <div class="salecard__note">
-                    Best for new startups or businesses with occasional
-                    in-person sales
+            <div class="setup__wrap">
+              <div class="row">
+                <div
+                  class="col"
+                  style="--col-xl: 6; --col-lg: 6; --col-md: 12; --col-sm: 12"
+                >
+                  <div class="salecard">
+                    <div class="salecard__header">Freelance</div>
+                    <h3 class="salecard__price">$<span>19</span>/mo</h3>
+                    <div class="salecard__note">
+                      Best for new startups or businesses with occasional
+                      in-person sales
+                    </div>
+                    <ul class="salecard__list">
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="30"
+                          viewBox="0 0 32 30"
+                          fill="none"
+                        >
+                          <path
+                            opacity="0.1"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
+                            fill="#4F77FF"
+                          />
+                          <path
+                            d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
+                            fill="#4F77FF"
+                          />
+                        </svg>
+                        <div>Fully-furnished and serviced</div>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="30"
+                          viewBox="0 0 32 30"
+                          fill="none"
+                        >
+                          <path
+                            opacity="0.1"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
+                            fill="#4F77FF"
+                          />
+                          <path
+                            d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
+                            fill="#4F77FF"
+                          />
+                        </svg>
+                        <div>Access break-out areas</div>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="30"
+                          viewBox="0 0 32 30"
+                          fill="none"
+                        >
+                          <path
+                            opacity="0.1"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
+                            fill="#4F77FF"
+                          />
+                          <path
+                            d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
+                            fill="#4F77FF"
+                          />
+                        </svg>
+                        <div>Thousands of locations</div>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="30"
+                          viewBox="0 0 32 30"
+                          fill="none"
+                        >
+                          <path
+                            opacity="0.1"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
+                            fill="#4F77FF"
+                          />
+                          <path
+                            d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
+                            fill="#4F77FF"
+                          />
+                        </svg>
+                        <div>Global transport hubs</div>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="30"
+                          viewBox="0 0 32 30"
+                          fill="none"
+                        >
+                          <path
+                            opacity="0.1"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
+                            fill="#4F77FF"
+                          />
+                          <path
+                            d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
+                            fill="#4F77FF"
+                          />
+                        </svg>
+                        <div>24/7 Support Online</div>
+                      </li>
+                    </ul>
+                    <a href="#" class="salecard__nav">Start your free trial</a>
                   </div>
-                  <ul class="salecard__list">
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="30"
-                        viewBox="0 0 32 30"
-                        fill="none"
-                      >
-                        <path
-                          opacity="0.1"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
-                          fill="#4F77FF"
-                        />
-                        <path
-                          d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
-                          fill="#4F77FF"
-                        />
-                      </svg>
-                      <div>Fully-furnished and serviced</div>
-                    </li>
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="30"
-                        viewBox="0 0 32 30"
-                        fill="none"
-                      >
-                        <path
-                          opacity="0.1"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
-                          fill="#4F77FF"
-                        />
-                        <path
-                          d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
-                          fill="#4F77FF"
-                        />
-                      </svg>
-                      <div>Access break-out areas</div>
-                    </li>
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="30"
-                        viewBox="0 0 32 30"
-                        fill="none"
-                      >
-                        <path
-                          opacity="0.1"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
-                          fill="#4F77FF"
-                        />
-                        <path
-                          d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
-                          fill="#4F77FF"
-                        />
-                      </svg>
-                      <div>Thousands of locations</div>
-                    </li>
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="30"
-                        viewBox="0 0 32 30"
-                        fill="none"
-                      >
-                        <path
-                          opacity="0.1"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
-                          fill="#4F77FF"
-                        />
-                        <path
-                          d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
-                          fill="#4F77FF"
-                        />
-                      </svg>
-                      <div>Global transport hubs</div>
-                    </li>
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="30"
-                        viewBox="0 0 32 30"
-                        fill="none"
-                      >
-                        <path
-                          opacity="0.1"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
-                          fill="#4F77FF"
-                        />
-                        <path
-                          d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
-                          fill="#4F77FF"
-                        />
-                      </svg>
-                      <div>24/7 Support Online</div>
-                    </li>
-                  </ul>
-                  <a href="#" class="salecard__nav">Start your free trial</a>
                 </div>
-              </div>
-              <div
-                class="col"
-                style="--col-xl: 6; --col-lg: 6; --col-md: 12; --col-sm: 12"
-              >
-                <div class="salecard last-child">
-                  <div class="salecard__header">Startup</div>
-                  <h3 class="salecard__price">$<span>49</span>/mo</h3>
-                  <div class="salecard__note">
-                    Best for new startups or businesses with occasional
-                    in-person sales
+                <div
+                  class="col"
+                  style="--col-xl: 6; --col-lg: 6; --col-md: 12; --col-sm: 12"
+                >
+                  <div class="salecard last-child">
+                    <div class="salecard__header">Startup</div>
+                    <h3 class="salecard__price">$<span>49</span>/mo</h3>
+                    <div class="salecard__note">
+                      Best for new startups or businesses with occasional
+                      in-person sales
+                    </div>
+                    <ul class="salecard__list">
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="30"
+                          viewBox="0 0 32 30"
+                          fill="none"
+                        >
+                          <path
+                            opacity="0.1"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
+                            fill="#4F77FF"
+                          />
+                          <path
+                            d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
+                            fill="#4F77FF"
+                          />
+                        </svg>
+                        <div>Fully-furnished and serviced</div>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="30"
+                          viewBox="0 0 32 30"
+                          fill="none"
+                        >
+                          <path
+                            opacity="0.1"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
+                            fill="#4F77FF"
+                          />
+                          <path
+                            d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
+                            fill="#4F77FF"
+                          />
+                        </svg>
+                        <div>Access break-out areas</div>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="30"
+                          viewBox="0 0 32 30"
+                          fill="none"
+                        >
+                          <path
+                            opacity="0.1"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
+                            fill="#4F77FF"
+                          />
+                          <path
+                            d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
+                            fill="#4F77FF"
+                          />
+                        </svg>
+                        <div>Thousands of locations</div>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="30"
+                          viewBox="0 0 32 30"
+                          fill="none"
+                        >
+                          <path
+                            opacity="0.1"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
+                            fill="#4F77FF"
+                          />
+                          <path
+                            d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
+                            fill="#4F77FF"
+                          />
+                        </svg>
+                        <div>Global transport hubs</div>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="30"
+                          viewBox="0 0 32 30"
+                          fill="none"
+                        >
+                          <path
+                            opacity="0.1"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
+                            fill="#4F77FF"
+                          />
+                          <path
+                            d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
+                            fill="#4F77FF"
+                          />
+                        </svg>
+                        <div>24/7 Support Online</div>
+                      </li>
+                    </ul>
+                    <a href="#" class="salecard__nav">Start your free trial</a>
                   </div>
-                  <ul class="salecard__list">
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="30"
-                        viewBox="0 0 32 30"
-                        fill="none"
-                      >
-                        <path
-                          opacity="0.1"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
-                          fill="#4F77FF"
-                        />
-                        <path
-                          d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
-                          fill="#4F77FF"
-                        />
-                      </svg>
-                      <div>Fully-furnished and serviced</div>
-                    </li>
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="30"
-                        viewBox="0 0 32 30"
-                        fill="none"
-                      >
-                        <path
-                          opacity="0.1"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
-                          fill="#4F77FF"
-                        />
-                        <path
-                          d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
-                          fill="#4F77FF"
-                        />
-                      </svg>
-                      <div>Access break-out areas</div>
-                    </li>
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="30"
-                        viewBox="0 0 32 30"
-                        fill="none"
-                      >
-                        <path
-                          opacity="0.1"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
-                          fill="#4F77FF"
-                        />
-                        <path
-                          d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
-                          fill="#4F77FF"
-                        />
-                      </svg>
-                      <div>Thousands of locations</div>
-                    </li>
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="30"
-                        viewBox="0 0 32 30"
-                        fill="none"
-                      >
-                        <path
-                          opacity="0.1"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
-                          fill="#4F77FF"
-                        />
-                        <path
-                          d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
-                          fill="#4F77FF"
-                        />
-                      </svg>
-                      <div>Global transport hubs</div>
-                    </li>
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="30"
-                        viewBox="0 0 32 30"
-                        fill="none"
-                      >
-                        <path
-                          opacity="0.1"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M15.9506 30C24.6789 30 31.7546 23.2843 31.7546 15C31.7546 6.71573 24.6789 0 15.9506 0C7.22221 0 0.146484 6.71573 0.146484 15C0.146484 23.2843 7.22221 30 15.9506 30Z"
-                          fill="#4F77FF"
-                        />
-                        <path
-                          d="M14.6299 20C14.3934 20 14.1574 19.9157 13.9768 19.7468L9.62891 15.6791L10.935 14.4567L14.6299 17.9134L22.0196 11L23.3258 12.2224L15.283 19.7468C15.1024 19.9157 14.8664 20 14.6299 20Z"
-                          fill="#4F77FF"
-                        />
-                      </svg>
-                      <div>24/7 Support Online</div>
-                    </li>
-                  </ul>
-                  <a href="#" class="salecard__nav">Start your free trial</a>
                 </div>
               </div>
             </div>
@@ -1050,7 +1137,7 @@
             <div class="client__note">
               Customer satisfaction is a primary goal for our company
             </div>
-            <div class="client__carousel">
+            <div class="client__carousel client__carousel--style2">
               <div class="row">
                 <div
                   class="col"
@@ -1210,7 +1297,7 @@
               <div class="row">
                 <div
                   class="col"
-                  style="--col-xl: 2; --col-lg: 2; --col-md: 2; --col-sm: 2"
+                  style="--col-xl: 2; --col-lg: 12; --col-md: 12; --col-sm: 12"
                 >
                   <a href="#" class="logo">
                     <svg
@@ -1245,7 +1332,7 @@
                 </div>
                 <div
                   class="col"
-                  style="--col-xl: 6; --col-lg: 6; --col-md: 12; --col-sm: 12"
+                  style="--col-xl: 6; --col-lg: 7; --col-md: 12; --col-sm: 12"
                 >
                   <div class="footer__menu-wrap">
                     <div class="footer__menu">
@@ -1300,7 +1387,7 @@
                 </div>
                 <div
                   class="col"
-                  style="--col-xl: 4; --col-lg: 4; --col-md: 12; --col-sm: 12"
+                  style="--col-xl: 4; --col-lg: 5; --col-md: 12; --col-sm: 12"
                 >
                   <div class="footer__text-subcribe">
                     <div class="footer__menu-title">Newsletter</div>

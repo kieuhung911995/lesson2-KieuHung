@@ -4,6 +4,9 @@
   align-items: center;
   gap: 70px;
   padding: 0 60px;
+  @media (max-width: 575px) {
+    padding: 0 15px;
+  }
 }
 .building__text {
   display: flex;
@@ -17,11 +20,18 @@
   width: 72%;
   text-align: center;
   padding-bottom: 30px;
+  @media (max-width: 1199px) {
+    width: 100%;
+  }
+  @media (max-width: 767px) {
+    font-size: 40px;
+  }
 }
 .building__note {
   font-size: 18px;
   line-height: 155.556%;
   letter-spacing: -0.3px;
+  text-align: center;
 }
 .building__item {
   position: relative;
@@ -45,6 +55,9 @@
     background-color: $colorBlue;
     border-radius: 50%;
     border-bottom-left-radius: 0px;
+    @media (max-width: 1200px) {
+      content: none;
+    }
   }
 }
 .building__icon {

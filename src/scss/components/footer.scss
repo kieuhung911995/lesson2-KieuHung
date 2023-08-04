@@ -58,10 +58,20 @@
 }
 .footer__bottom-wrap {
   padding: 100px 0;
+  @media (max-width: 575px) {
+    padding: 40px 0;
+  }
 }
 .footer__menu-wrap {
   display: flex;
   gap: 110px;
+  flex-wrap: wrap;
+  @media (max-width: 991px) {
+    justify-content: space-between;
+  }
+  @media (max-width: 575px) {
+    row-gap: 15px;
+  }
 }
 .footer__menu-title {
   color: #fff;
@@ -101,6 +111,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
   padding: 20px 0;
   border-top: solid 1px $colorGrayText;
 }

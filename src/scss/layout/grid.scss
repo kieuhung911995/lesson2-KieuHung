@@ -20,11 +20,11 @@
   padding-top: var(--grid-col-gap-horizontal);
 }
 
-// @media (max-width: 576px) {
-//   .col {
-//     width: calc(var(--col-) / var(--grid) * 100%);
-//   }
-// }
+@media (max-width: 575px) {
+  .col {
+    width: calc(var(--col-xs) / var(--grid) * 100%);
+  }
+}
 @media (min-width: 576px) {
   .col {
     width: calc(var(--col-sm) / var(--grid) * 100%);

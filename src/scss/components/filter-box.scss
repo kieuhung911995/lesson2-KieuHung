@@ -1,5 +1,16 @@
 .filter-box {
   width: 100%;
+  @media (max-width: 575px) {
+    display: none;
+  }
+}
+.filter-box__icon {
+  display: none;
+  @media (max-width: 575px) {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
 }
 .filter-box__title {
   height: 48px;

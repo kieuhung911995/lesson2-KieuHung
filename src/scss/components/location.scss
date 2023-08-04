@@ -1,5 +1,13 @@
 .location {
   padding: 0 60px;
+  @media (max-width: 575px) {
+    padding: 0 15px;
+  }
+}
+.location .row {
+  @media (max-width: 991px) {
+    flex-direction: column-reverse;
+  }
 }
 .location__img {
   position: relative;
@@ -17,6 +25,9 @@
   background-color: $colorGreenUnion;
   border-radius: 50%;
   border-bottom-right-radius: 0px;
+  @media (max-width: 1199px) {
+    content: none;
+  }
 }
 .location__description {
   display: flex;
@@ -46,18 +57,27 @@
   line-height: 119.048%;
   letter-spacing: -0.84px;
   padding: 60px 0 40px;
+  @media (max-width: 991px) {
+    padding-top: 0;
+  }
 }
 .location__content {
   font-size: 18px;
   line-height: 155.556%;
   letter-spacing: -0.3px;
   padding-bottom: 60px;
+  @media (max-width: 1199px) {
+    padding-bottom: 40px;
+  }
 }
 .location__nav {
   display: flex;
   align-items: center;
   gap: 10px;
   padding-bottom: 80px;
+  @media (max-width: 1199px) {
+    padding-bottom: 40px;
+  }
 }
 .location__nav-text {
   color: $colorPurple;

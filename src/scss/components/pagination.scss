@@ -2,6 +2,9 @@
   display: flex;
   align-items: center;
   gap: 30px;
+  @media (max-width: 767px) {
+    gap: 15px;
+  }
   svg {
     cursor: pointer;
   }
@@ -19,6 +22,10 @@
   line-height: 171.429%;
   letter-spacing: -0.3px;
   cursor: pointer;
+  @media (max-width: 767px) {
+    width: 40px;
+    height: 40px;
+  }
   &.active {
     background-color: $colorBlue;
     color: #fff;
