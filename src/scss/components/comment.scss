@@ -4,6 +4,9 @@
   justify-content: space-between;
   gap: 20px;
   border-bottom: 1px solid $colorGrayLine2;
+  @media (max-width: 575px) {
+    flex-direction: column;
+  }
   &:first-child {
     border-top: 1px solid $colorGrayLine2;
   }
@@ -12,6 +15,9 @@
   }
   &.child {
     padding-left: 18%;
+    @media (max-width: 575px) {
+      padding-left: 40px;
+    }
   }
 }
 .comment__avatar {
@@ -24,11 +30,15 @@
 }
 .comment__text {
   width: 86%;
+  @media (max-width: 575px) {
+    width: 100%;
+  }
 }
 .comment__detail {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .comment__name {
   color: #333;

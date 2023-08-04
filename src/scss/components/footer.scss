@@ -16,6 +16,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 1199px) {
+    width: 100%;
+    padding: 0 15px;
+  }
 }
 .footer__title-top {
   font-family: Outfit;
@@ -32,6 +36,9 @@
   line-height: 116.667%;
   letter-spacing: -2px;
   padding-bottom: 70px;
+  @media (max-width: 767px) {
+    font-size: 35px;
+  }
 }
 .footer__title-bottom {
   color: #2d3958;
@@ -43,6 +50,9 @@
   padding-bottom: 70px;
   span {
     color: $colorGreen;
+  }
+  @media (max-width: 575px) {
+    font-size: 35px;
   }
 }
 .footer__title-bottom--style2 {

@@ -2,6 +2,12 @@
   display: flex;
   gap: 20px;
   cursor: pointer;
+  @media (max-width: 991px) {
+    width: 31%;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 .new-sidebar__img {
   width: 50px;
@@ -22,4 +28,9 @@
   font-size: 14px;
   line-height: 171.429%;
   letter-spacing: -0.3px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
 }

@@ -30,6 +30,10 @@
 }
 .text-box__wrap-text {
   padding: 30px 40px 50px;
+  @media (max-width: 767px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .text-box__wrap-text--style2 {
   padding-bottom: 20px;
@@ -69,6 +73,9 @@
   font-size: 36px;
   line-height: 127.778%;
   letter-spacing: -1px;
+  @media (max-width: 767px) {
+    font-size: 30px;
+  }
   a:hover {
     color: $colorBlue;
   }
@@ -92,6 +99,9 @@
   font-size: 18px;
   line-height: 155.556%;
   letter-spacing: -0.3px;
+  @media (max-width: 767px) {
+    padding: 15px;
+  }
 }
 .text-box__social {
   display: flex;
