@@ -18,3 +18,9 @@ for (let i = 0; i < filterTitle.length - 1; i++) {
     filterContent[i].classList.toggle("active");
   });
 }
+//page open filter
+let filter = document.querySelector(".filter-box__icon");
+let filterOverlay = document.querySelector(".filter-box__overlay");
+filter.addEventListener("click", function () {
+  filterOverlay.classList.toggle("active");
+});
