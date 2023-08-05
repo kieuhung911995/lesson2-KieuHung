@@ -121,12 +121,15 @@
 .workspace__bar {
   text-align: center;
 }
-.workspace__img-lg {
-  width: 75%;
-  border-radius: 20px;
+.workspace__img-icon {
   position: absolute;
   top: 260px;
   right: 0;
+  width: 75%;
+  @media (max-width: 1199px) {
+    position: static;
+    width: 100%;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -141,10 +144,17 @@
       content: none;
     }
   }
-  @media (max-width: 1199px) {
-    position: static;
-    width: 100%;
+}
+.workspace__img-lg {
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  img {
+    transition: all 0.3s ease-in-out;
   }
+}
+.workspace__img-lg:hover img {
+  transform: scale(1.1);
 }
 .workspace__img-sm {
   width: 370px;
@@ -153,10 +163,16 @@
   top: 80px;
   right: 80px;
   z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
   img {
     border-radius: 20px;
+    transition: all 0.3s ease-in-out;
   }
   @media (max-width: 1199px) {
     display: none;
   }
+}
+.workspace__img-sm:hover img {
+  transform: scale(1.1);
 }

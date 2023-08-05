@@ -76,6 +76,9 @@
   @media (max-width: 767px) {
     font-size: 30px;
   }
+  a {
+    transition: all 0.3s ease-in-out;
+  }
   a:hover {
     color: $colorBlue;
   }

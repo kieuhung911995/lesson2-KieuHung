@@ -1,11 +1,9 @@
-.new-related:hover .new-related__text {
-  color: $colorBlue;
-}
 .new-related__img {
   width: 100%;
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
+  margin-bottom: 20px;
   img {
     transition: all 0.3s ease-in-out;
   }
@@ -18,4 +16,8 @@
   font-size: 18px;
   line-height: 155.556%;
   letter-spacing: -0.3px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $colorBlue;
+  }
 }

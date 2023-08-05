@@ -20,9 +20,6 @@
 .new-sidebar__img:hover img {
   transform: scale(1.1);
 }
-.new-sidebar:hover .new-sidebar__text {
-  color: $colorBlue;
-}
 .new-sidebar__text {
   width: 65%;
   font-size: 14px;
@@ -33,4 +30,8 @@
   -webkit-line-clamp: 3;
   line-clamp: 3;
   -webkit-box-orient: vertical;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $colorBlue;
+  }
 }

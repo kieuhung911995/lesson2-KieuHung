@@ -1,16 +1,17 @@
 .header {
-  position: relative;
   background-image: url("../../assets/images/background-header.jpg");
-  background-size: 100% 100%;
-  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .header--style2 {
   background-image: url("../../assets/images/header-bg2.jpg");
-  height: 950px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 950px;
   @media (max-width: 1199px) {
     background-image: none;
     background-color: $colorPinkBox;
-    height: 500px;
+    min-height: auto;
   }
 }
 .header__top {
@@ -34,6 +35,7 @@
     line-height: 160%;
     letter-spacing: -0.3px;
     text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
     &:hover {
       color: $colorBlue;
     }
@@ -146,10 +148,9 @@
   gap: 20px;
 }
 .header__name-page {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 150px 0 200px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 .header__tilte-top {
@@ -174,16 +175,10 @@
   }
 }
 .header__content-box {
-  position: absolute;
-  top: 380px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 100px 0 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media (max-width: 1199px) {
-    top: 280px;
-  }
   @media (max-width: 767px) {
     width: 100%;
     padding: 0 15px;
@@ -196,7 +191,7 @@
   font-weight: 500;
   line-height: 108.333%;
   letter-spacing: -2px;
-  width: 98%;
+  width: 65%;
   text-align: center;
   padding-bottom: 40px;
   span {
@@ -216,7 +211,7 @@
   font-size: 18px;
   line-height: 155.556%;
   letter-spacing: -0.3px;
-  width: 57%;
+  width: 45%;
   text-align: center;
   padding-bottom: 70px;
   @media (max-width: 1199px) {

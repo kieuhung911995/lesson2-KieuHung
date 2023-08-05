@@ -21,6 +21,26 @@ for (let i = 0; i < filterTitle.length - 1; i++) {
 //page open filter
 let filter = document.querySelector(".filter-box__icon");
 let filterOverlay = document.querySelector(".filter-box__overlay");
-filter.addEventListener("click", function () {
-  filterOverlay.classList.toggle("active");
+filter?.addEventListener("click", function () {
+  filterOverlay?.classList.toggle("active");
+});
+//set up change price
+let setupToggle = document.querySelector(".setup__toggle");
+let setupBtn = document.querySelector(".setup__toggle-btn");
+let setupType = document.querySelector(".setup__date-text");
+let salecardPrice = document.querySelectorAll("#salecardPrice");
+let oldPrice = [];
+for (let i = 0; i < salecardPrice.length; i++) {
+  oldPrice.push(salecardPrice[i].innerHTML);
+}
+setupToggle?.addEventListener("click", function () {
+  setupBtn?.classList.toggle("active");
+  for (let i = 0; i < oldPrice.length; i++) {
+    if (setupBtn.classList.contains("active")) {
+      let newPrice = Math.round(oldPrice[i] * 0.8);
+      salecardPrice[i].innerHTML = newPrice;
+    } else {
+      salecardPrice[i].innerHTML = oldPrice[i];
+    }
+  }
 });

@@ -598,11 +598,13 @@
                 class="col"
                 style="--col-xl: 7; --col-lg: 7; --col-md: 12; --col-sm: 12"
               >
-                <div class="location__img">
-                  <img
-                    src="./assets/images/locationIMG.jpg"
-                    alt="location-img"
-                  />
+                <div class="location__img-icon">
+                  <div class="location__img">
+                    <img
+                      src="./assets/images/locationIMG.jpg"
+                      alt="location-img"
+                    />
+                  </div>
                 </div>
                 <div class="location__description">
                   <h3 class="location__address">
@@ -768,8 +770,10 @@
                   </svg>
                 </div>
               </div>
-              <div class="workspace__img-lg">
-                <img src="./assets/images/workspace-lg.jpg" />
+              <div class="workspace__img-icon">
+                <div class="workspace__img-lg">
+                  <img src="./assets/images/workspace-lg.jpg" />
+                </div>
               </div>
               <div class="workspace__img-sm">
                 <img src="./assets/images/workspace-sm.jpg" />
@@ -790,8 +794,10 @@
                 class="col"
                 style="--col-xl: 7; --col-lg: 7; --col-md: 12; --col-sm: 12"
               >
-                <div class="room__img first-child">
-                  <img src="./assets/images/newYork.jpg" alt="room-img" />
+                <div class="room__icon">
+                  <div class="room__img">
+                    <img src="./assets/images/newYork.jpg" alt="room-img" />
+                  </div>
                 </div>
                 <h3 class="img__city">New York</h3>
               </div>
@@ -837,21 +843,9 @@
             <div class="setup__feature">
               <div class="setup__date">
                 <div class="setup__date-text">Monthly</div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="72"
-                  height="33"
-                  viewBox="0 0 72 33"
-                  fill="none"
-                >
-                  <rect width="72" height="33" rx="16.5" fill="#E7E5EA" />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M17.5 27C23.299 27 28 22.299 28 16.5C28 10.701 23.299 6 17.5 6C11.701 6 7 10.701 7 16.5C7 22.299 11.701 27 17.5 27Z"
-                    fill="#34C635"
-                  />
-                </svg>
+                <div class="setup__toggle">
+                  <div class="setup__toggle-btn"></div>
+                </div>
               </div>
               <div class="setup__date">
                 <div class="setup__date-text">Yearly</div>
@@ -866,7 +860,9 @@
                 >
                   <div class="salecard">
                     <div class="salecard__header">Freelance</div>
-                    <div class="salecard__price">$<span>19</span>/mo</div>
+                    <div class="salecard__price">
+                      $<span id="salecardPrice">19</span>/mo
+                    </div>
                     <div class="salecard__note">
                       Best for new startups or businesses with occasional
                       in-person sales
@@ -992,7 +988,9 @@
                 >
                   <div class="salecard last-child">
                     <div class="salecard__header">Startup</div>
-                    <div class="salecard__price">$<span>49</span>/mo</div>
+                    <div class="salecard__price">
+                      $<span id="salecardPrice">49</span>/mo
+                    </div>
                     <div class="salecard__note">
                       Best for new startups or businesses with occasional
                       in-person sales

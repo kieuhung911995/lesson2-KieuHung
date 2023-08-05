@@ -26,14 +26,9 @@
     font-size: 30px;
   }
 }
-.room__img {
+.room__icon {
   position: relative;
-  cursor: pointer;
-  border-radius: 40px;
-  img {
-    border-radius: 40px;
-  }
-  &.first-child::before {
+  &::before {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -47,6 +42,18 @@
       content: none;
     }
   }
+}
+.room__img {
+  cursor: pointer;
+  border-radius: 40px;
+  overflow: hidden;
+  img {
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+.room__img:hover img {
+  transform: scale(1.1);
 }
 .img__city {
   color: $colorBlue;

@@ -45,14 +45,31 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  svg {
-    cursor: pointer;
-  }
 }
 .setup__date-text {
   font-size: 18px;
   line-height: 155.556%;
   letter-spacing: -0.3px;
+}
+.setup__toggle {
+  width: 72px;
+  height: 33px;
+  border-radius: 50px;
+  background-color: $colorGrayLine;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  cursor: pointer;
+}
+.setup__toggle-btn {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: $colorGreen;
+  transition: all 0.3s ease-in-out;
+  &.active {
+    transform: translateX(38px);
+  }
 }
 .setup__sale {
   width: 85px;
