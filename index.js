@@ -29,6 +29,7 @@ let setupToggle = document.querySelector(".setup__toggle");
 let setupBtn = document.querySelector(".setup__toggle-btn");
 let setupType = document.querySelector(".setup__date-text");
 let salecardPrice = document.querySelectorAll("#salecardPrice");
+let salecardRate = document.querySelector("#salecardRate").innerHTML;
 let oldPrice = [];
 for (let i = 0; i < salecardPrice.length; i++) {
   oldPrice.push(salecardPrice[i].innerHTML);
@@ -37,7 +38,7 @@ setupToggle?.addEventListener("click", function () {
   setupBtn?.classList.toggle("active");
   for (let i = 0; i < oldPrice.length; i++) {
     if (setupBtn.classList.contains("active")) {
-      let newPrice = Math.round(oldPrice[i] * 0.8);
+      let newPrice = Math.round((oldPrice[i] * (100 - salecardRate)) / 100);
       salecardPrice[i].innerHTML = newPrice;
     } else {
       salecardPrice[i].innerHTML = oldPrice[i];

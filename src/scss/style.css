@@ -2972,6 +2972,10 @@ textarea {
   letter-spacing: -0.3px;
 }
 
+#salecardRate {
+  padding-left: 5px;
+}
+
 .salecard {
   position: relative;
   border-radius: 10px;
