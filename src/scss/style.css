@@ -3056,14 +3056,14 @@ textarea {
   text-align: center;
   padding-bottom: 90px;
 }
+@media (max-width: 991px) {
+  .find-workspace__note {
+    width: 100%;
+  }
+}
 @media (max-width: 767px) {
   .find-workspace__note {
     padding-bottom: 40px;
-  }
-}
-@media (max-width: 575px) {
-  .find-workspace__note {
-    font-size: 18px;
   }
 }
 
